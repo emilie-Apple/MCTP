@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <title>M.C.T.P</title>
   
-    <meta name="author" content="Alberto Hartzet">
-    <meta name="description" content="Maçonnerie">
+    <meta name="description" content="MCTP site de maçonnerie">
+    <meta name="keywords" content="maçonnerie, matériaux, maçon, béton">
     <meta property="og:url" content="http://codepen.io/hrtzt/details/NPZKRN">
     <meta property="og:image" content="https://pbs.twimg.com/media/CCNJN_XUMAAJSzU.jpg:large">
     
@@ -36,27 +36,51 @@
              <section class="accueil"><span class="title">M.C.T.P</span></section>  
           </div>
           <div class="page" id="p2">
-            <section class="icon fa fa-keyboard-o"><span class="title">Type</span></section>
+            <section class="icon fa fa-users"><span class="title">Qui sommes-nous ?</span>
+          
+
+
+            </section>
           </div>  
           <div class="page" id="p3">
-            <section class="icon fa fa-rocket"><span class="title">Rocket</span></section>
+            <section class="icon fa fa-building"><span class="title">Activité</span></section>
           </div>
           <div class="page" id="p4">
-            <section class="icon fa fa-dribbble">
-              <span class="title">Dribbble</span>
+            <section class="icon fa fa-camera-retro">
+              <span class="title">Réalisations</span>
               <p class="hint">
-                <a href="https://dribbble.com/albertohartzet" target="_blank">Im ready to play, <span class="hint line-trough">invite me </span> find me</a>
+                
               </p>
-              <p class="hint">Already invited by <a href="http://www.dribbble.com/mrpeters" target="_blank">Stan Peters</a></p>
+              
             </section>
           </div> 
           <div class="page" id="p5">
-            <section class="icon fa fa-plus-circle">
-              <span class="title">More</span>
-              <p class="hint">
-                <span>You love one page & CSS only stuff? </span><br/>
-                <a href="http://codepen.io/hrtzt/details/pgXMYb/" target="_blank">check this pen "Pure CSS One page vertical navigation"</a>
-              </p>
+            <section class="icon fa fa-plus-envelope">
+              <span class="title">Contactez-nous</span>
+                <div id="form-main">
+  <div id="form-div">
+    <form class="form" id="form1" method="post" action="traitement.php">
+      
+      <p class="name">
+        <input name="name" type="text" class="validate[required,custom[onlyLetter],length[0,100]] feedback-input" placeholder="Nom" id="name" />
+      </p>
+      
+      <p class="email">
+        <input name="email" type="text" class="validate[required,custom[email]] feedback-input" id="email" placeholder="Email" />
+      </p>
+      
+      <p class="text">
+        <textarea name="text" class="validate[required,length[6,300]] feedback-input" id="comment" placeholder="Commentaire"></textarea>
+      </p>
+      
+      
+      <div class="submit">
+        <input type="submit" value="Envoyer" id="button-blue"/>
+        <div class="ease"></div>
+      </div>
+    </form>
+  </div>
+              
             </section>
           </div> 
         </div>
