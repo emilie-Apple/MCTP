@@ -1,0 +1,114 @@
+#section3 {
+  margin: 0;
+  font: 400 16px/1.5em 'Source Sans Pro', 'Segoe UI', 'Helvetica Neue', Roboto, Arial, sans-serif;
+  overflow: hidden;
+}
+
+.l-accordion {
+  width: 80vw; /* Taille d'une slide */
+  height: 100%; /* Hauteur d'une slidé, réglée à ce qu'elle prenne toute la page */
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex; /* Moyen d'affichage : à laissr sur "flex" pour pouvoir bénéficier des animations */
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: stretch;
+  -webkit-justify-content: stretch;
+      -ms-flex-pack: stretch;
+          justify-content: stretch;
+}
+.l-accordion__slide {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  -webkit-transition: 0.4s ease-in-out;
+  transition: 0.4s ease-in-out;
+  -webkit-transform: skewX(-5deg);
+          transform: skewX(-5deg);
+  overflow: hidden;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  border-left: 4px solid #fff;
+}
+[data-accordion-slide].l-accordion__slide:hover,
+[data-accordion-slide].l-accordion__slide:focus {
+  -webkit-box-flex: 5;
+  -webkit-flex: 5;
+      -ms-flex: 5;
+          flex: 5;
+}
+.l-accordion__slide:first-child {
+  border-left: 0;
+  -webkit-box-flex: 1.25;
+  -webkit-flex: 1.25;
+      -ms-flex: 1.25;
+          flex: 1.25;
+  margin-left: -3em;
+}
+.l-accordion__slide:last-child {
+  -webkit-box-flex: 1.25;
+  -webkit-flex: 1.25;
+      -ms-flex: 1.25;
+          flex: 1.25;
+  margin-right: -3em;
+}
+.l-accordion__inside {
+  -webkit-transform: skewX(5deg);
+          transform: skewX(5deg);
+  padding: 4em;
+  background-cover: cover;
+  background-position: 50% 50%;
+  margin: 0 -3em;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+[data-accordion-slide="1"] .l-accordion__inside {
+  background-image: url("http://www.ps4france.com/wp-content/uploads/2016/04/No-Mans-Sky.png");
+  background-position: 0 50%;
+}
+[data-accordion-slide="2"] .l-accordion__inside {
+  background-image: url("http://cooldown.fr/wp-content/uploads/2016/05/no-mans-sky-min%C3%A9raux.jpg");
+  background-position: 27.85% 50%;
+}
+[data-accordion-slide="3"] .l-accordion__inside {
+  background-image: url("http://www.ps4france.com/wp-content/uploads/2016/05/No-Mans-Sky.png");
+  background-position: 50% 50%;
+}
+[data-accordion-slide="4"] .l-accordion__inside {
+  background-image: url("http://cooldown.fr/wp-content/uploads/2016/05/no-mans-sky-montagnes.jpg");
+  background-position: 72.25% 50%;
+}
+[data-accordion-slide="5"] .l-accordion__inside {
+  background-image: url("http://cdn.wccftech.com/wp-content/uploads/2015/08/No-Mans-Sky-Gamescom-17.jpg");
+  background-position: 100% 50%;
+}
+h2 {
+  margin: 0;
+  color: #fff;
+  font-weight: 100;
+  font-size: 4rem;
+  text-align: center;
+  line-height: 1;
+  text-shadow: 0 0 10px rgba(0,0,0,0.5);
+}

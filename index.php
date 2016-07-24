@@ -11,7 +11,8 @@
     
     <link rel="stylesheet" href="css/normalize.css">
     <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css'>
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="./css/accordeonP3.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="js/prefixfree.min.js"></script>
 
@@ -43,7 +44,7 @@
             </section>
           </div>  
           <div class="page" id="p3">
-            <section class="icon fa fa-building"><span class="title">Activité</span></section>
+            <?php include('./includes/page3.php'); ?>
           </div>
           <div class="page" id="p4">
             <section class="icon fa fa-camera-retro">
