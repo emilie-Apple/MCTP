@@ -127,9 +127,7 @@ li {
   padding: 5px;
 
 }
-{
-  font-family: Montserrat, serif;
-}
+
 
 a {
   text-decoration: none;
@@ -210,7 +208,7 @@ a {
 }
 
 #text-feedback{
-  width: 80%;
+  width: 70%;
   padding-left: 10%;
   padding-right: 10%;
   background-color:white;
@@ -227,7 +225,6 @@ a {
   background-color:#3c3c3c;
   padding-left:35px;
   padding-right:35px;
-  padding-top:35px;
   padding-bottom:50px;
   width: 450px;
   float: left;
