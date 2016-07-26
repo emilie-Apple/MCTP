@@ -14,7 +14,7 @@
     <link rel="stylesheet" type="text/css" href="./css/accordeonP3.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="js/prefixfree.min.js"></script>
-    <script src="js/p2.min.js"></script>
+    
     
   </head>
 
@@ -37,14 +37,15 @@
           </div>
           <div class="page" id="p2">
           <section class="icon fa fa-users"><span class="title">Qui sommes-nous ?</span>
-          <div id="circle-shape-example">
-  <img src="css/img/logo.png" alt="logo" class="logo">
-  <p>L'entreprise M-C-T-P situé dans la région du Loiret à Nangeville (45330) <br/> est une entreprise de maçonnerie générale créée en 2013 par Fabien TECHER.</p>
-  <p>Avec l’aide de son associé Grégory et d’une équipe de 4 personnes, l’entreprise <br/> M-C-T-P met toutes ses compétences et son savoir faire à votre service .<br/>
-  Des petits travaux de maçonnerie, réparations, rénovations complètes, constructions de maisons neuves, nous réalisons tous vos travaux de maçonnerie et de gros œuvre.</p>
-  <p>Vous avez un projet de construction, d'agrandissement ou de rénovation,<br/> nous sommes à votre écoute pour vous apporter la réponse la mieux adaptée et vous accompagner dans sa réalisation.
-
-          </div>
+          <div class="content">
+  
+<p>Aroma wings est doppio black et fair trade seasonal breve. Cortado organic coffee, single shot, roast cappuccino mocha single origin doppio. Half and half, roast, espresso roast decaffeinated aromatic, con panna froth grounds grinder sweet. Wings fair trade extraction lungo, irish cappuccino skinny saucer wings.</p>
+<p>Ut bar medium eu, medium, con panna lungo whipped cup frappuccino. Dark crema single origin, con panna cortado eu galão crema. Organic qui and whipped espresso caramelization spoon espresso aroma. To go, whipped, con panna cream galão coffee kopi-luwak.</p>
+<p>Single shot, blue mountain siphon, beans acerbic chicory as wings plunger pot. Foam spoon, bar trifecta redeye, id crema latte chicory strong. Percolator at ristretto, chicory dark redeye body arabica siphon. Con panna single origin, medium rich iced, aged siphon grinder con panna sweet cappuccino.</p>
+<p>Single origin steamed cultivar redeye grounds macchiato espresso. Milk, affogato, aged, dark arabica bar, sweet instant galão plunger pot half and half. Aged siphon, ut extra, percolator turkish aromatic eu affogato. Viennese robusta, breve a trifecta black, percolator whipped acerbic single origin affogato wings.</p>
+<p>Dark siphon, aroma, lungo whipped dark et dark. Carajillo white shop, grounds est beans decaffeinated single origin and dark. Spoon beans extra, irish rich, mazagran aftertaste half and half bar froth mocha froth. Medium acerbic pumpkin spice, saucer foam a acerbic frappuccino medium.</p>
+<p>Mug cream extra lungo qui kopi-luwak skinny. Breve doppio latte chicory crema est skinny. Caramelization barista qui, shop con panna, lungo spoon wings to go filter. Siphon chicory, roast doppio skinny cup americano foam.</p>
+</div>
           </section>
           </div>  
           <div class="page" id="p3">
@@ -129,7 +130,7 @@
         <script src="js/index.js"></script>
         <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
         <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
-<script src='http://demosthenes.info/assets/scripts/extras/shapes.js'></script>
+
   
         
 

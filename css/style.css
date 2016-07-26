@@ -12,8 +12,6 @@ html, body, .page {
   overflow: hidden;
   font-family: Montserrat, serif;
 
-  
-
 }
 
 * {
@@ -37,7 +35,15 @@ html, body, .page {
       background-attachment: fixed;
       background-size: cover;
       }
-#p2 { background-color: white; }
+#p2 { background-image: url(img/logo.png);
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: 300px;
+  background-repeat: no-repeat;
+  
+
+}
 
 #p3 { background: gold; }
 #p4 { background: deeppink; }
@@ -205,31 +211,34 @@ a {
   -o-transform: translateX(0) !important;
   transition-delay: 1s;
 }
+/*qui sommes-nous */
 
-#circle-shape-example { 
-  font-family: Open Sans, sans-serif; 
-  margin: 2rem; 
+.content{
   font-size: 15px;
-  margin-top: 100px;
+  border:1px solid black;
+  margin-left: 500px;
+  margin-right: 150px;
 }
 
-#circle-shape-example .logo { 
-  width: 33%; height: auto;
-  min-width: 150px;
-  margin-right: 100px;
-  float: right;
-  -webkit-shape-outside:circle();
-  shape-outside:circle();
-}
-
-.logo{
-  opacity: 0.4;
+h1{
+  min-height: 120px;
+  width: 90%;
+  max-width: 700px;
+  text-align: center;
+  margin: 0 auto;
+  text-decoration: none;
+  color: #fff;
+  padding-top: 80px;
 }
 
 p {
-  margin-top: 20px;
-  text-align: left;
+  width: 100%;
+  max-width: 700px;
+  text-align: right;
+  margin-right: 0 auto;
+  padding-bottom: 32px;
 }
+/*contact page 5*/
 
 .contact-wrapper {
   position: absolute;
