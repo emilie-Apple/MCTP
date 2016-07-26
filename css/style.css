@@ -205,6 +205,22 @@ a {
   transition-delay: 1s;
 }
 
+#circle-shape-example { 
+  font-family: Open Sans, sans-serif; 
+  margin: 2rem; 
+  font-size: 15px;
+}
+
+#circle-shape-example .curve { 
+  width: 33%; height: auto;
+  min-width: 150px;
+  float: right;
+  margin-right:2rem; 
+  border-radius: 50%;
+  -webkit-shape-outside:circle();
+  shape-outside:circle();
+}
+
 .contact-wrapper {
   position: absolute;
   transform: translateY(-50%);
@@ -269,12 +285,15 @@ a {
   z-index: 9;
   transition: all 0.5s ease-in-out;
   transition-delay: 1s;
+
 }
 .envelope .top-wrapper,
 .envelope .bottom-wrapper {
   box-sizing: border-box;
   background: #03a9f5;
   color: #fff;
+  font-size: 15px;
+
 }
 .envelope .top-wrapper {
   padding: 2em 2em 0;

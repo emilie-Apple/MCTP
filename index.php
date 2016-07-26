@@ -15,6 +15,7 @@
     <link rel="stylesheet" type="text/css" href="./css/accordeonP3.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="js/prefixfree.min.js"></script>
+    <script src="js/p2.min.js"></script>
     
 
     
@@ -39,8 +40,21 @@
           </div>
           <div class="page" id="p2">
             <section class="icon fa fa-users"><span class="title">Qui sommes-nous ?</span>
-          
-            </section>
+          <div id="circle-shape-example">
+  <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/kiwifruit-on-a-plate.jpg" alt="A photograph of sliced kiwifruit on a while plate" class="curve">
+  <p>
+
+Entreprise M-C-T-P, est une entreprise de maçonnerie générale situé dans la région du Loiret à Nangeville (45330)
+
+Vous avez un projet de construction, d'agrandissement ou de rénovation, nous sommes à votre écoute pour vous apporter la réponse la mieux adaptée et vous accompagner dans sa réalisation.
+
+Un vaste savoir-faire en matière de maçonnerie traditionnelle et également en matière de maçonnerie plus moderne, ce qui nous permet de proposer une réponse adaptée à vos projets selon vos besoins et vos goûts.
+
+Nos équipes de maçons interviennent pour différents types de projets : rénovation de constructions récentes mais aussi pour des bâtiments anciens, en pierre.
+
+Nous réalisons les travaux de rénovation pour les particuliers et les professionnels.</p>
+</div>
+              </section>
           </div>  
           <div class="page" id="p3">
             <?php include('./includes/page3.php'); ?>
@@ -123,6 +137,9 @@
         <script src='http://cdn.ractivejs.org/latest/ractive.js'></script>
         <script src="js/index.js"></script>
         <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+        <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<script src='http://demosthenes.info/assets/scripts/extras/shapes.js'></script>
+  
         
 
     
