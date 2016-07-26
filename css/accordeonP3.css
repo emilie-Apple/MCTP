@@ -1,3 +1,6 @@
+/********************************************
+          CSS Page 3 || Acordéon
+********************************************/
 #section3 {
   margin: 0;
   font: 400 16px/1.5em 'Source Sans Pro', 'Segoe UI', 'Helvetica Neue', Roboto, Arial, sans-serif;
@@ -93,22 +96,24 @@
 }
 [data-accordion-slide="3"] .l-accordion__inside {
   background-image: url("http://www.ps4france.com/wp-content/uploads/2016/05/No-Mans-Sky.png");
-  background-position: 50% 50%;
+  background-position: 50% 50%;    
 }
+
 [data-accordion-slide="4"] .l-accordion__inside {
   background-image: url("http://cooldown.fr/wp-content/uploads/2016/05/no-mans-sky-montagnes.jpg");
   background-position: 72.25% 50%;
 }
-[data-accordion-slide="5"] .l-accordion__inside {
-  background-image: url("http://cdn.wccftech.com/wp-content/uploads/2015/08/No-Mans-Sky-Gamescom-17.jpg");
-  background-position: 100% 50%;
-}
+
 h2 {
   margin: 0;
   color: #fff;
   font-weight: 100;
-  font-size: 4rem;
+  font-size: 2rem;
   text-align: center;
   line-height: 1;
   text-shadow: 0 0 10px rgba(0,0,0,0.5);
 }
+
+/********************************************
+          CSS Page 3 || Modal
+********************************************/
