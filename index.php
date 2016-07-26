@@ -8,7 +8,6 @@
     <meta name="keywords" content="maçonnerie, matériaux, maçon, béton">
     
     <meta property="og:image" content="https://pbs.twimg.com/media/CCNJN_XUMAAJSzU.jpg:large">
-    
     <link rel="stylesheet" href="css/normalize.css">
     <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css'>
     <link rel="stylesheet" type="text/css" href="css/style.css" />
@@ -17,44 +16,36 @@
     <script src="js/prefixfree.min.js"></script>
     <script src="js/p2.min.js"></script>
     
-
-    
   </head>
 
   <body>
 
-    <div class="ct" id="t1">
-  <div class="ct" id="t2">
-    <div class="ct" id="t3">
-      <div class="ct" id="t4">
-         <div class="ct" id="t5">
-          <ul id="menu">
+  <div class="ct" id="t1">
+    <div class="ct" id="t2">
+      <div class="ct" id="t3">
+        <div class="ct" id="t4">
+          <div class="ct" id="t5">
+            <ul id="menu">
             <a href="#t1"><li class="icon fa fa-home" id="uno"> Accueil</li></a>
             <a href="#t2"><li class="icon fa fa-users" id="dos"> Qui sommes-nous ?</li></a>
             <a href="#t3"><li class="icon fa fa-building" id="tres"> Activité</li></a>
             <a href="#t4"><li class="icon fa fa-camera-retro" id="cuatro"> Réalisations</li></a>
             <a href="#t5"><li class="icon fa fa-envelope" id="cinco"> Contact</li></a>
-          </ul>
+            </ul>
           <div class="page" id="p1">
              <section class="accueil"><span class="title">M.C.T.P</span></section>  
           </div>
           <div class="page" id="p2">
-            <section class="icon fa fa-users"><span class="title">Qui sommes-nous ?</span>
+          <section class="icon fa fa-users"><span class="title">Qui sommes-nous ?</span>
           <div id="circle-shape-example">
-  <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/kiwifruit-on-a-plate.jpg" alt="A photograph of sliced kiwifruit on a while plate" class="curve">
-  <p>
+  <img src="css/img/logo.png" alt="logo" class="logo">
+  <p>L'entreprise M-C-T-P situé dans la région du Loiret à Nangeville (45330) <br/> est une entreprise de maçonnerie générale créée en 2013 par Fabien TECHER.</p>
+  <p>Avec l’aide de son associé Grégory et d’une équipe de 4 personnes, l’entreprise <br/> M-C-T-P met toutes ses compétences et son savoir faire à votre service .<br/>
+  Des petits travaux de maçonnerie, réparations, rénovations complètes, constructions de maisons neuves, nous réalisons tous vos travaux de maçonnerie et de gros œuvre.</p>
+  <p>Vous avez un projet de construction, d'agrandissement ou de rénovation,<br/> nous sommes à votre écoute pour vous apporter la réponse la mieux adaptée et vous accompagner dans sa réalisation.
 
-Entreprise M-C-T-P, est une entreprise de maçonnerie générale situé dans la région du Loiret à Nangeville (45330)
-
-Vous avez un projet de construction, d'agrandissement ou de rénovation, nous sommes à votre écoute pour vous apporter la réponse la mieux adaptée et vous accompagner dans sa réalisation.
-
-Un vaste savoir-faire en matière de maçonnerie traditionnelle et également en matière de maçonnerie plus moderne, ce qui nous permet de proposer une réponse adaptée à vos projets selon vos besoins et vos goûts.
-
-Nos équipes de maçons interviennent pour différents types de projets : rénovation de constructions récentes mais aussi pour des bâtiments anciens, en pierre.
-
-Nous réalisons les travaux de rénovation pour les particuliers et les professionnels.</p>
-</div>
-              </section>
+          </div>
+          </section>
           </div>  
           <div class="page" id="p3">
             <?php include('./includes/page3.php'); ?>

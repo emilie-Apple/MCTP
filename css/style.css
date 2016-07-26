@@ -37,7 +37,8 @@ html, body, .page {
       background-attachment: fixed;
       background-size: cover;
       }
-#p2 { background: tomato; }
+#p2 { background-color: white; }
+
 #p3 { background: gold; }
 #p4 { background: deeppink; }
 #p5 { background: #C5D0D4; }
@@ -209,16 +210,25 @@ a {
   font-family: Open Sans, sans-serif; 
   margin: 2rem; 
   font-size: 15px;
+  margin-top: 100px;
 }
 
-#circle-shape-example .curve { 
+#circle-shape-example .logo { 
   width: 33%; height: auto;
   min-width: 150px;
+  margin-right: 100px;
   float: right;
-  margin-right:2rem; 
-  border-radius: 50%;
   -webkit-shape-outside:circle();
   shape-outside:circle();
+}
+
+.logo{
+  opacity: 0.4;
+}
+
+p {
+  margin-top: 20px;
+  text-align: left;
 }
 
 .contact-wrapper {
