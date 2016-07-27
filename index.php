@@ -117,12 +117,11 @@
     </div>
   </div>
 </div>
+<main>
+  <div class="arrow animated bounce">
+</main>
 <footer>
-  <div class="footer">
-            <div class="container">
-                © 2016 Tous droits réservés
-            </div>
-        </div>
+  <h1>© 2016 Emilie Chartier & Thomas Merlin. All rights reserved.</h1>
 </footer>
     
 
