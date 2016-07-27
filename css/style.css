@@ -9,7 +9,6 @@ html, body, .page {
   -moz-transition: all .6s cubic-bezier(.5, .2, .2, 1.1);
   -o-transition: all .6s cubic-bezier(.5, .2, .2, 1.1);  
   color: #fff;
-  font-family: Montserrat, serif;
   
 }
 
@@ -25,7 +24,7 @@ html, body, .page {
   left: 210%;
 }
 
-#p1 { background-image: url(img/camion.jpg); 
+#p1 { background-image: url(img/camion1.png); 
       background-repeat: no-repeat;
       background-attachment: fixed;
       background-size: cover;
@@ -100,7 +99,7 @@ ul {
   top: 0;
   bottom: 0;
   left: 0;
-  margin-top: 80px;
+  margin-top: 120px;
   height: 280px;
   padding: 10px;
   
@@ -198,6 +197,60 @@ a {
   -o-transform: translateX(0) !important;
   transition-delay: 1s;
 }
+/*page1*/
+.blurred-bg {
+  background-repeat: no-repeat;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.blurred-bg.tinted {
+  background-size: 100%;
+  background-image: -moz-linear-gradient(90deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2));
+  background-image: -webkit-linear-gradient(90deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2));
+  background-image: linear-gradient(0deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2));
+}
+
+.box {
+  width: 200px;
+  top: 10px;
+  margin-left: 10px;
+  position: absolute;
+  border-radius: 5px;
+  -moz-box-shadow: 0 20px 30px rgba(0, 0, 0, 0.6);
+  -webkit-box-shadow: 0 20px 30px rgba(0, 0, 0, 0.6);
+  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 20px;
+  text-align: center;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.4);
+  display: flex;
+  transition: box-shadow .3s ease;
+  margin-bottom: 50px;
+}
+.box:active {
+  cursor: move;
+  -moz-box-shadow: 0 20px 50px rgba(0, 0, 0, 0.9);
+  -webkit-box-shadow: 0 20px 50px rgba(0, 0, 0, 0.9);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.9);
+}
+.box .content {
+  margin: auto;
+}
+
+h3{
+  color: white;
+  
+}
+.tinted h3, .tinted p {
+  color: white;
+  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.2);
+}
 
 /*page 2*/
 #circle-shape-example { 
@@ -205,7 +258,6 @@ a {
   font-size: 15px;
   margin-top: 80px;
 
- 
 }
 
 #circle-shape-example .logo { 
@@ -218,9 +270,9 @@ a {
 }
 
 h4 {
-  border-bottom: 1px solid silver;
+  border-bottom: 1px solid white;
   text-align: left;
-  color: silver;
+  color: white;
 
 }
 
@@ -668,8 +720,3 @@ footer h1 {
   background-size: contain;
 }
 
-.bounce {
-  -moz-animation: bounce 2s infinite;
-  -webkit-animation: bounce 2s infinite;
-  animation: bounce 2s infinite;
-}

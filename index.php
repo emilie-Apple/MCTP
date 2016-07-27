@@ -3,10 +3,8 @@
   <head>
     <meta charset="UTF-8">
     <title>M.C.T.P</title>
-  
     <meta name="description" content="MCTP site de maçonnerie">
     <meta name="keywords" content="maçonnerie, matériaux, maçon, béton">
-    
     <meta property="og:image" content="https://pbs.twimg.com/media/CCNJN_XUMAAJSzU.jpg:large">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css'>
@@ -15,11 +13,9 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="js/prefixfree.min.js"></script>
     
-    
   </head>
 
   <body>
-
   <div class="ct" id="t1">
     <div class="ct" id="t2">
       <div class="ct" id="t3">
@@ -33,17 +29,23 @@
             <a href="#t5"><li class="icon fa fa-envelope" id="cinco"> Contact</li></a>
             </ul>
           <div class="page" id="p1">
-             <section class="accueil"><span class="title">M.C.T.P</span></section>  
+             <section class="accueil"><span class="title">M.C.T.P</span></section> 
+          <div id="box1" class="box blurred-bg tinted">
+  <div class="content">
+      <h3><i class="fa fa-phone" aria-hidden="true">  06.34.18.31.90</i></h3>
+      
+  </div>
+</div>
           </div>
           <div class="page" id="p2">
           <section class="icon fa fa-users"><span class="title">Qui sommes-nous ?</span>
           <div id="circle-shape-example">
-  <img src="css/img/logo.png" alt="logo" class="logo">
-  <h4>Présentation</h4>
-  <p>L'entreprise <strong>M-C-T-P </strong> situé dans la région du Loiret à Nangeville (45330) <br/> est une entreprise de maçonnerie générale créée en 2013 par Fabien TECHER.</p>
-  <p>Avec l’aide de son associé Grégory et d’une équipe de 4 personnes, l’entreprise <br/> <strong>M-C-T-P </strong>met toutes ses compétences et son savoir faire à votre service .<br/>
-  Des petits travaux de maçonnerie, réparations, rénovations complètes,<br/> constructions de maisons neuves, nous réalisons tous vos travaux de maçonnerie <br/> et de gros œuvre.</p>
-  <p>Vous avez un projet de construction, d'agrandissement ou de rénovation,<br/> nous sommes à votre écoute pour vous apporter la réponse la mieux adaptée <br/> et vous accompagner dans sa réalisation.
+            <img src="css/img/logo.png" alt="logo" class="logo">
+            <h4>Présentation</h4>
+            <p>L'entreprise <strong>M-C-T-P </strong> situé dans la région du Loiret à Nangeville (45330) <br/> est une entreprise de maçonnerie générale créée en 2013 par Fabien TECHER.</p>
+            <p>Avec l’aide de son associé Grégory et d’une équipe de 4 personnes, l’entreprise <br/> <strong>M-C-T-P </strong>met toutes ses compétences et son savoir faire à votre service .<br/>
+            Des petits travaux de maçonnerie, réparations, rénovations complètes,<br/> constructions de maisons neuves, nous réalisons tous vos travaux de maçonnerie <br/> et de gros œuvre.</p>
+            <p>Vous avez un projet de construction, d'agrandissement ou de rénovation,<br/> nous sommes à votre écoute pour vous apporter la réponse la mieux adaptée <br/> et vous accompagner dans sa réalisation.
 
           </div>
           </section>
@@ -55,9 +57,7 @@
             <section class="icon fa fa-camera-retro">
               <span class="title">Réalisations</span>
               <p class="hint">
-                
-              </p>
-              
+              </p> 
             </section>
           </div> 
           <div class="page" id="p5">
@@ -123,8 +123,8 @@
 <footer>
   <h1>© 2016 Emilie Chartier & Thomas Merlin. All rights reserved.</h1>
 </footer>
-    
-
+        <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+<script src="http://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
         <script src='http://cdn.ractivejs.org/latest/ractive.js'></script>
         <script src="js/index.js"></script>
         <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>

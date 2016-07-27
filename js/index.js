@@ -3,3 +3,6 @@ var ractive = new Ractive({
   template: '#template',
   data: {}
 });
+$(function() {
+	$( ".box" ).draggable();
+});
