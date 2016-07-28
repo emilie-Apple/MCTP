@@ -155,13 +155,6 @@ button:focus{outline:none;}
    100% {width:200%;height:200%;margin:calc(275px - 100%) 0 0 calc(50% - 100%);}
 }
 
-
-.ball{
-	 animation-name: bigandfit;
-    animation-duration: 1s;
-    -webkit-animation-fill-mode: forwards;
-}
-
 .modal1, .modal2, .modal3, .modal4 {
 	width: 80%;
 	position:absolute;
@@ -170,31 +163,54 @@ button:focus{outline:none;}
 	height:100%;
 	background:#222;
 	color:#eee;
-	font-size:100px;
-	text-align:center;
-	padding:100px;
 	z-index:100;
 	display:none;
 }
 
-.smallgap{
-	width:550px;
-	height:550px;
-	margin:25px auto;
-	position:relative;
-	overflow:hidden;
-}
-
 .close1, .close2, .close3, .close4 {
-	width:0px;
+	position: absolute;
+    left: 2%;
+    top: 3%;
 	height:0px;
 	padding:0;
 	background:rgba(255,255,255,0.8);
 	float: left;
 	transition:0.4s all;
-    font: 12px Helvetica, sans-serif;
+    font: 30px Helvetica, sans-serif;
+    
 }
 
-small{
-	font-size:14px;
+/********************************************
+          CSS Page 3 || Contenu Modal
+********************************************/
+
+.modal-header {
+    text-align: center;
+}
+
+.modal-strip img {
+    height: 150px;
+    width: 100%;
+    white-space: nowrap;
+}
+
+.modal-content {
+    padding: 20px 40px;
+}
+
+.modal_button {
+    padding: 10px 20px !important;
+    font-size: 1.2em;
+    background-color: #997191;
+    border-radius: 4px;
+    border: solid thin #4D4D50;
+    box-shadow: 5px 5px 5px #4D4D50;
+    color: white;
+    text-shadow: 2px 2px gray;
+    float: right;
+    margin-right: 20px;
+}
+
+.modal_button:hover {
+  box-shadow: 5px 0px 5px lightgray;
 }

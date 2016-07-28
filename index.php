@@ -7,12 +7,14 @@
     <meta name="description" content="MCTP site de maçonnerie">
     <meta name="keywords" content="maçonnerie, matériaux, maçon, béton">
     <meta property="og:url" content="http://codepen.io/hrtzt/details/NPZKRN">
-    <meta property="og:image" content="https://pbs.twimg.com/media/CCNJN_XUMAAJSzU.jpg:large">
+    <meta property="og:image" content="https://pbs.twimg.com/media/CCNJN_XUMAAJSzU.jpg:large" />
     <link rel="stylesheet" href="./assets/css/normalize.css">
+    <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
     <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css'>
     <link rel="stylesheet" href="./assets/css/loading.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
     <link rel="stylesheet" type="text/css" href="./assets/css/accordeonP3.css" />
+      
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="./assets/js/prefixfree.min.js"></script>
 
@@ -98,8 +100,8 @@
         </div>
 </footer>
   </body>
-    <script src="./assets/js/index.js"></script>
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="./assets/js/bootstrap/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js"></script>
     <script src="./assets/js/loading.js" type="text/javascript"></script>
     <script src='./assets/js/modal.js' type="text/javascript"></script>
