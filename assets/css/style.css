@@ -24,6 +24,10 @@ html, body, .page {
   position: absolute;
 }
 
+#t1 {
+    z-index: 2;
+}
+
 #p1 {
   left: 1;
 }

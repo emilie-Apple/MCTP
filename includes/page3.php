@@ -2,7 +2,7 @@
 	<div class="l-accordion__slide" data-accordion-slide="1">
 		<div class="l-accordion__inside">
 			<h2>
-                Maçonnerie
+                &nbsp;&nbsp;&nbsp;&nbsp;Maçonnerie
             </h2>          
         </div>
     </div>
