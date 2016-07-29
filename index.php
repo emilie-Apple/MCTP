@@ -121,9 +121,9 @@
                     </div>
                 </div>
             </div>
-<main>
-  <div class="arrow animated bounce">
-</main>
+            <main>
+                <div class="arrow animated bounce">
+            </main>
             <footer>
                 <div class="footer-copyright grey darken-3">
                     <div class="container">
