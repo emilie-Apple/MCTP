@@ -125,12 +125,8 @@
                 <div class="arrow animated bounce">
             </main>
             <footer>
-                <div class="footer-copyright grey darken-3">
-                    <div class="container">
-                        © 2016 Tous droits réservés
-                    </div>
-                </div>
-            </footer>
+  <h1>Mentions légales  |  © 2016 Emilie Chartier & Thomas Merlin. All rights reserved.</h1>
+</footer>
         </body>
         
         <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
