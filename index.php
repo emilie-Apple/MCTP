@@ -134,6 +134,8 @@
         </body>
         
         <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+                <script src='http://cdn.ractivejs.org/latest/ractive.js'></script>
+
         <script src="./assets/js/prefixfree.min.js"></script>
         <script src="http://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
         <script type="text/javascript" src="./assets/js/bootstrap/bootstrap.min.js"></script>
