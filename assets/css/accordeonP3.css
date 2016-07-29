@@ -87,20 +87,20 @@
           align-items: center;
 }
 [data-accordion-slide="1"] .l-accordion__inside {
-  background-image: url("http://www.ps4france.com/wp-content/uploads/2016/04/No-Mans-Sky.png");
-  background-position: 0 50%;
+  background-image: url("http://static.sitra-tourisme.com/filestore/objets-touristiques/images/125/1/721277.jpg");
+  background-position: 25 75%;
 }
 [data-accordion-slide="2"] .l-accordion__inside {
-  background-image: url("http://cooldown.fr/wp-content/uploads/2016/05/no-mans-sky-min%C3%A9raux.jpg");
+  background-image: url("http://blog.123devis.com/files/2014/04/Fotolia_1348716_Subscription_XL.jpg");
   background-position: 27.85% 50%;
 }
 [data-accordion-slide="3"] .l-accordion__inside {
-  background-image: url("http://www.ps4france.com/wp-content/uploads/2016/05/No-Mans-Sky.png");
+  background-image: url("http://www.papillon-btp.fr/wp-content/uploads/2009/06/IMG_1768.jpg");
   background-position: 50% 50%;    
 }
 
 [data-accordion-slide="4"] .l-accordion__inside {
-  background-image: url("http://cooldown.fr/wp-content/uploads/2016/05/no-mans-sky-montagnes.jpg");
+  background-image: url("https://www.lausanne-peintre.ch/images/pl%C3%A2trerie-lissage-de-plaque-de-platre.jpg");
   background-position: 72.25% 50%;
 }
 
@@ -213,4 +213,10 @@ button:focus{outline:none;}
 
 .modal_button:hover {
   box-shadow: 5px 0px 5px lightgray;
+}
+
+@media screen and(max-width: 1024px) {
+    #section3 {
+	width: 100%;
+}
 }

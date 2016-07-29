@@ -19,7 +19,7 @@ html, body, .page {
 }
 
 #t1 {
-    z-index: 2;
+    z-index: 1;
 }
 
 #p1 {
@@ -30,11 +30,16 @@ html, body, .page {
   left: 210%;
 }
 
-#p1 { background-image: url(img/camion.jpg); 
-      background-repeat: no-repeat;
-      background-attachment: fixed;
-      background-size: cover;
-      }
+#p1 { 
+    background-image: url(img/camion.jpg); 
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    z-index: -1;
+    position: absolute;
+    top: 0;
+}
+
 #p2 { background: tomato; }
 #p3 { background: gold; }
 #p4 { background: deeppink; }
@@ -97,7 +102,7 @@ ul .icon:hover {
   -o-transform: scale(1.2) !important;
 }
 
-ul {
+#menu {
   position: fixed;
   z-index: 1;
   top: 0;
@@ -359,6 +364,10 @@ input:focus, textarea:focus {
   background-color:white;
 }
 
+.xsResponsiveLogo, .xsResponsiveMenu {
+    display: none;
+}
+
 @media only screen and (max-width: 580px) {
   #form-div{
     left: 3%;
@@ -368,5 +377,157 @@ input:focus, textarea:focus {
     padding-left: 3%;
     padding-right: 3%;
   }
+}
+
+
+/***************************************
+    MEDIA QUERY | XS DEVICE | 768px
+***************************************/
+@media screen and (max-width: 768px) {
+    #menu {
+        display: none;
+    }
+    
+    .xsResponsiveLogo {
+        display: inline-block;
+        height: 30px;
+    }
+    
+    .xsResponsiveMenu {
+        z-index: 1;
+        display: inline-block;
+    }
+    @keyframes checked-anim {
+    50% {
+        width: 3000px;
+        height: 3000px;
+    }
+    100% {
+        width: 100%;
+        height: 100%;
+        border-radius: 0;
+    }
+}
+@keyframes not-checked-anim {
+    0% {
+        width: 3000px;
+        height: 3000px;
+    }
+}
+a {
+    margin: 75px 0 -55px 0;
+    color: #03A9F4;
+    font: 14pt "Roboto", sans-serif;
+    font-weight: 700;
+    line-height: 1.8;
+    text-decoration: none;
+    text-transform: none;
+    list-style: none;
+    outline: 0;
+    display: none;
+}
+a {
+    width: 230px;
+    text-indent: 56px;}
+a:focus {
+    display: block;
+    color: #333;
+    background-color: #eee;
+    transition: all .5s;
+}
+
+#trigger, #burger, #burger:before, #burger:after {
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    background: #03A9F4;
+    width: 30px;
+    height: 5px;
+    transition: .2s ease;
+    cursor: pointer;
+    z-index: 1;
+}
+#trigger {
+    height: 25px;
+    background: none;
+}
+#burger:before {
+    content: " ";
+    top: 10px;
+    left: 0;
+}
+#burger:after {
+    content: " ";
+    top: 20px;
+    left: 0;
+}
+#menu-toggle:checked + #trigger + #burger {
+    top: 35px;
+    transform: rotate(180deg);
+    transition: transform .2s ease;
+}
+
+#menu-toggle:checked + #trigger + #burger:before {
+    width: 20px;
+    top: -2px;
+    left: 18px;
+    transform: rotate(45deg) translateX(-5px);
+    transition: transform .2s ease;
+}
+#menu-toggle:checked + #trigger + #burger:after {
+    width: 20px;
+    top: 2px;
+    left: 18px;
+    transform: rotate(-45deg) translateX(-5px);
+    transition: transform .2s ease;
+}
+#xsResponsiveMenu-Content {
+    position: absolute;
+    top: -5%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
+    width: 110px;
+    height: 110px;
+    background-color: #fff;
+    border-bottom-right-radius: 100%;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.26);
+    animation: not-checked-anim .2s both;
+    transition: .2s;
+    
+}
+
+    .xsResponsiveMenu-ContentLogo {
+       width: 30%;
+    }
+    
+    .xsResponsiveMenu-ContentLink {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    #menu-toggle:checked + #trigger + #burger + #xsResponsiveMenu-Content {
+        animation: checked-anim 1s ease both;
+    }
+    
+    #menu-toggle:checked + #trigger ~ #xsResponsiveMenu-Content > a {
+        display: block;
+    }
+    
+    [type="checkbox"]:not(:checked), [type="checkbox"]:checked {
+        display: none;
+    }
+    
+    #p2, #p3, #p4, #p5 {
+        background-size:cover;
+        position: absolute;
+        top: 0;
+        left: 190%;
+        z-index: -1;
+    }
+    
+    #section3 {
+	width: 100%;
+}
 }
 
