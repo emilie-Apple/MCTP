@@ -28,7 +28,7 @@
                                     <a href="#t4"><li class="icon fa fa-camera-retro" id="cuatro"> Réalisations</li></a>
                                     <a href="#t5"><li class="icon fa fa-envelope" id="cinco"> Contact</li></a>
                                 </ul>
-                                <div class="xsResponsiveMenu">
+                                <!--<div class="xsResponsiveMenu">
                                     
                                     <input type="checkbox" id="menu-toggle" />
                                     <label id="trigger" for="menu-toggle"></label>
@@ -41,16 +41,14 @@
                                         <a class="xsResponsiveMenu-ContentLink" href="#t4">Réalisations</a>
                                         <a class="xsResponsiveMenu-ContentLink" href="#t5">Contact</a>
                                     </ul>
-                                </div>
+                                </div>-->
 
                                 <div class="page" id="p1">
                                     <section class="accueil"><span class="title">M.C.T.P</span></section>  
                                 </div>
 
                                 <div class="page" id="p2">
-                                    <section class="icon fa fa-users">
-                                        <span class="title">Qui sommes-nous ?</span>
-                                    </section>
+                                    <?php include ('./includes/page2.php'); ?>
                                 </div>
                                 
                                 <div class="page" id="p3">
@@ -58,39 +56,74 @@
                                 </div>
 
                                 <div class="page" id="p4">
-                                    ppo
-                                </div> 
+                                    <section class="icon fa fa-camera-retro">
+                                        <span class="title">Réalisations</span>
+                                        <p class="hint"></p> 
+                                    </section>
+                                </div>  
 
                                 <div class="page" id="p5">
                                     <section class="icon fa fa-plus-envelope">
-                                        <span class="title">Contactez-nous</span>
                                         <div id="form-main">
-                                            <div id="form-div">
-                                                <form class="form" id="form1" method="post" action="traitement.php">
-                                                    <p class="name">
-                                                        <input name="name" type="text" class="validate[required,custom[onlyLetter],length[0,100]] feedback-input" placeholder="Nom" id="name" />
-                                                    </p>
-                                                    <p class="email">
-                                                        <input name="email" type="text" class="validate[required,custom[email]] feedback-input" id="email" placeholder="Email" />
-                                                    </p>
-                                                    <p class="text">
-                                                        <textarea name="text" class="validate[required,length[6,300]] feedback-input" id="comment" placeholder="Commentaire"></textarea>
-                                                    </p>
-                                                    
-                                                    <div class="submit">
-                                                        <input type="submit" value="Envoyer" id="button-blue"/>
-                                                        <div class="ease"></div>
+                                            <div id="container"></div>
+                                            <div id="template">
+                                                <div class="flip-card" on-click="toggle('flipCard');">
+                                                    <script>
+                                                        {{ flipCard ? 'Renvoyer un mail' : 'Contactez-nous' }}
+                                                    </script>
+                                                </div>
+                                                <div class="contact-wrapper">
+                                                    <div class="envelope {{ flipCard ? 'active' : '' }}">
+                                                        <div class="back paper"></div>
+                                                        <div class="content">
+                                                            <div class="form-wrapper">
+                                                                <form>
+                                                                    <div class="top-wrapper">
+                                                                        <div class="input">
+                                                                            <label>Nom</label>
+                                                                            <input type="text" name="name"/>
+                                                                        </div>
+                                                                        <div class="input">
+                                                                            <label>Téléphone</label>
+                                                                            <input type="text" name="phone"/>
+                                                                        </div>
+                                                                        <div class="input">
+                                                                            <label>Email</label>
+                                                                            <input type="text" name="_replyto"/>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="bottom-wrapper">
+                                                                        <div class="input">
+                                                                            <label>Type de travaux</label>
+                                                                                <input type="text" name="_subject"/>
+                                                                        </div>
+                                                                        <div class="input">
+                                                                            <label>Message</label>
+                                                                            <textarea rows="5" name="message"></textarea>
+                                                                        </div>
+                                                                            <div class="submit">
+                                                                                <div class="submit-card" on-click="toggle('flipCard')">Envoyer</div>
+                                                                        </div>
+                                                                    </div>
+                                                                </form>
+                                                            </div>
+                                                        </div>
+                                                        <div class="front paper"></div>
                                                     </div>
-                                                </form>
+                                                </div>
                                             </div>
                                         </div>
                                     </section>
-                                </div> 
+                                </div>
+                              </div> 
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+<main>
+  <div class="arrow animated bounce">
+</main>
             <footer>
                 <div class="footer-copyright grey darken-3">
                     <div class="container">
@@ -100,8 +133,9 @@
             </footer>
         </body>
         
-        <script src="./assets/js/prefixfree.min.js"></script>
         <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+        <script src="./assets/js/prefixfree.min.js"></script>
+        <script src="http://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
         <script type="text/javascript" src="./assets/js/bootstrap/bootstrap.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js"></script>
         <script src="./assets/js/loading.js" type="text/javascript"></script>
