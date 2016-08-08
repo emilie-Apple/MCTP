@@ -8,10 +8,10 @@
     <meta name="description" content="MCTP site de maçonnerie">
     <meta name="keywords" content="maçonnerie, matériaux, maçon, béton">
     <meta property="og:image" content="https://pbs.twimg.com/media/CCNJN_XUMAAJSzU.jpg:large">
-    <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css'>
-    <link rel="stylesheet" type="text/css" href="./assets/css/accordeonP3.css" />
+    <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css' />
     <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
-      
+    <link rel="stylesheet" type="text/css" href="./assets/css/accordeonP3.css" />
+    <link rel="stylesheet" type="text/css" href="./assets/css/realisations.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="js/prefixfree.min.js"></script>  
   </head>
@@ -45,10 +45,16 @@
           <div id="circle-shape-example">
             <img src="assets/img/logo.png" alt="logo" class="logo">
             <h4>Présentation</h4>
-            <p>L'entreprise <strong>M-C-T-P </strong> situé dans la région du Loiret à Nangeville (45330) <br/> est une entreprise de maçonnerie générale créée en 2013 par Fabien TECHER.</p>
-            <p>Avec l’aide de son associé Grégory et d’une équipe de 4 personnes, l’entreprise <br/> <strong>M-C-T-P </strong>met toutes ses compétences et son savoir faire à votre service .<br/>
-            Des petits travaux de maçonnerie, réparations, rénovations complètes,<br/> constructions de maisons neuves, nous réalisons tous vos travaux de maçonnerie <br/> et de gros œuvre.</p>
-            <p>Vous avez un projet de construction, d'agrandissement ou de rénovation,<br/> nous sommes à votre écoute pour vous apporter la réponse la mieux adaptée <br/> et vous accompagner dans sa réalisation.
+            <p>L'entreprise <strong>M-C-T-P </strong> situé dans la région du Loiret à Nangeville (45330) <br/>
+                est une entreprise de maçonnerie générale créée en 2013 par Fabien TECHER.</p>
+            <p>Avec l’aide de son associé Grégory et d’une équipe de 4 personnes, l’entreprise <br/>
+                <strong>M-C-T-P </strong>met toutes ses compétences et son savoir faire à votre service .<br/>
+                Des petits travaux de maçonnerie, réparations, rénovations complètes,<br/> 
+                constructions de maisons neuves, nous réalisons tous vos travaux de maçonnerie <br/> 
+                et de gros œuvre.</p>
+            <p>Vous avez un projet de construction, d'agrandissement ou de rénovation,<br/> 
+                nous sommes à votre écoute pour vous apporter la réponse la mieux adaptée <br/> 
+                et vous accompagner dans sa réalisation.
 
           </div>
           </section>
@@ -57,13 +63,7 @@
             <?php include('./includes/page3.php'); ?>
           </div>
           <div class="page" id="p4">
-
-            <section class="icon fa fa-camera-retro">
-              <span class="title">Réalisations</span>
-              <p class="hint">
-              </p> 
-            </section>
-
+            <?php include('./includes/page4.php'); ?>
           </div> 
           <div class="page" id="p5">
             <section class="icon fa fa-plus-envelope">
@@ -137,6 +137,7 @@
     <script src='http://cdn.ractivejs.org/latest/ractive.js'></script>
     <script src="./assets/js/index.js"></script>  
     <script src='./assets/js/modal.js' type="text/javascript"></script> 
+    <script src="./assets/js/realisations.js" type="text/javascript"></script>
     
 
     <script>

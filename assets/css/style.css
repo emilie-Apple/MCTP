@@ -44,7 +44,7 @@ html, body, .page {
 
 
 #p2 { background: silver; }
-#p3 { background: gold; }
+#p3 { background: linear-gradient(to top, blue, rgba(0,255,0,0)); }
 #p4 { background: deeppink; }
 #p5 { background: #C5D0D4; }
 

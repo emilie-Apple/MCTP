@@ -198,6 +198,12 @@ button:focus{outline:none;}
     padding: 20px 40px;
 }
 
+.modal-content p {
+    padding: 20px;
+    margin-left: 0px;
+    text-align: justify;
+}
+
 .modal_button {
     padding: 10px 20px !important;
     font-size: 1.2em;
