@@ -123,7 +123,7 @@ ul .icon:hover {
   font-size: 20px;
 }
 
-li {
+.boutonMenu {
   background-color: #5A4AE8;
   border-radius: 15px 50px 30px;
   border: 1px solid #a1a1a1;

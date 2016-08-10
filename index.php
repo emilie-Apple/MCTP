@@ -25,11 +25,11 @@
          <div class="ct" id="t5">
           <ul id="menu">
 
-            <a href="#t1"><li class="icon fa fa-home" id="uno"> Accueil</li></a>
-            <a href="#t2"><li class="icon fa fa-users" id="dos"> Qui sommes-nous ?</li></a>
-            <a href="#t3"><li class="icon fa fa-building" id="tres"> Activité</li></a>
-            <a href="#t4"><li class="icon fa fa-camera-retro" id="cuatro"> Réalisations</li></a>
-            <a href="#t5"><li class="icon fa fa-envelope" id="cinco"> Contact</li></a>
+            <a href="#t1"><li class="icon fa fa-home boutonMenu" id="uno"> Accueil</li></a>
+            <a href="#t2"><li class="icon fa fa-users boutonMenu" id="dos"> Qui sommes-nous ?</li></a>
+            <a href="#t3"><li class="icon fa fa-building boutonMenu" id="tres"> Activité</li></a>
+            <a href="#t4"><li class="icon fa fa-camera-retro boutonMenu" id="cuatro"> Réalisations</li></a>
+            <a href="#t5"><li class="icon fa fa-envelope boutonMenu" id="cinco"> Contact</li></a>
             </ul>
           <div class="page" id="p1">
              <section class="accueil"></section> 
