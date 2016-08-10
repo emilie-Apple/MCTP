@@ -9,14 +9,14 @@
     <meta name="keywords" content="maçonnerie, matériaux, maçon, béton, terrassement, carrelage, travaux publics, terrasse, MCTP">
     <meta property="og:image" content="https://pbs.twimg.com/media/CCNJN_XUMAAJSzU.jpg:large">
     <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css' />
-    <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
     <link rel="stylesheet" type="text/css" href="./assets/css/accordeonP3.css" />
     <link rel="stylesheet" type="text/css" href="./assets/css/realisations.css" />
     <link rel="stylesheet" type="text/css" href="./assets/css/page4/carousel.css" />
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   </head>
 
-  <body>
+  <body> 
 
     <div class="ct" id="t1">
   <div class="ct" id="t2">
@@ -66,7 +66,7 @@
             <?php include('./includes/page4.php'); ?>
           </div> 
           <div class="page" id="p5">
-            <?php include('./includes/test.php'); ?>
+            <?php include('./includes/page5.php'); ?>
             </div>
 <footer>
 <h1>Mentions légales  |  © 2016 Emilie Chartier & Thomas Merlin. All rights reserved.</h1>   
@@ -74,12 +74,12 @@
     
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <script type="text/javascript" src="./assets/js/bootstrap/bootstrap.min.js"></script>
+    <script src="./assets/js/realisations.js" type="text/javascript"></script>
+    <script src="./assets/js/carousel.js" type="text/javascript"></script>
     <script src='http://cdn.ractivejs.org/latest/ractive.js'></script>
     <script src="./assets/js/index.js"></script>  
     <script src="./assets/js/prefixfree.min.js"></script>
     <script src='./assets/js/modal.js' type="text/javascript"></script> 
-    <script src="./assets/js/realisations.js" type="text/javascript"></script>
-    <script src="./assets/js/carousel.js" type="text/javascript"></script>
     
 
     <script>
