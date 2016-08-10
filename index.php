@@ -13,7 +13,7 @@
     <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
       
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="js/prefixfree.min.js"></script>  
+      
   </head>
 
   <body>
@@ -66,66 +66,8 @@
 
           </div> 
           <div class="page" id="p5">
-            <section class="icon fa fa-plus-envelope">
-              
-                
-  <div id="container"></div>
-  <script id="template">
-    <div class="flip-card" on-click="toggle('flipCard')">{{ flipCard ? 'Renvoyer un mail' : 'Contactez-nous' }}</div>
-    <div class="contact-wrapper">
-        <div class="envelope {{ flipCard ? 'active' : '' }}">
-          <div class="back paper"></div>
-          <div class="content">
-            <div class="form-wrapper">
-              <form>
-                <div class="top-wrapper">
-                  <div class="input">
-                    <label>Nom</label>
-                    <input type="text" name="name"/>
-                  </div>
-                  <div class="input">
-                    <label>Téléphone</label>
-                    <input type="text" name="phone"/>
-                  </div>
-                  <div class="input">
-                    <label>Email</label>
-                    <input type="text" name="_replyto"/>
-                  </div>
-                </div>
-
-                <div class="bottom-wrapper">
-                  <div class="input">
-                    <label>Type de travaux</label>
-                    <input type="text" name="_subject"/>
-                  </div>
-                  <div class="input">
-                    <label>Message</label>
-                    <textarea rows="5" name="message"></textarea>
-                  </div>
-                  <div class="submit">
-                    <div class="submit-card" on-click="toggle('flipCard')">Envoyer</div>
-                  </div>
-                  </div>
-                    </form>
-                  </div>
-                  </div>
-                  <div class="front paper"></div>
-                  </div>
-</script>
-                
-      
-            
-          </section>
-          </div> 
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-<main>
-  <div class="arrow animated bounce">
-</main>
-
+            <?php include('./includes/page5.php'); ?>
+            </div>
 <footer>
 <h1>Mentions légales  |  © 2016 Emilie Chartier & Thomas Merlin. All rights reserved.</h1>   
 </footer>
@@ -136,6 +78,7 @@
     <script type="text/javascript" src="./assets/js/bootstrap/bootstrap.min.js"></script>
     <script src='http://cdn.ractivejs.org/latest/ractive.js'></script>
     <script src="./assets/js/index.js"></script>  
+    <script src="./assets/js/prefixfree.min.js"></script>
     <script src='./assets/js/modal.js' type="text/javascript"></script> 
     
 
