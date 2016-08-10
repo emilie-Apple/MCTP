@@ -6,7 +6,7 @@
     <title>M.C.T.P</title>
     <meta name="viewport" content="initial-scale=1.0, user-scalable=yes" />
     <meta name="description" content="MCTP site de maçonnerie">
-    <meta name="keywords" content="maçonnerie, matériaux, maçon, béton">
+    <meta name="keywords" content="maçonnerie, matériaux, maçon, béton, terrassement, carrelage, travaux publics, terrasse, MCTP">
     <meta property="og:image" content="https://pbs.twimg.com/media/CCNJN_XUMAAJSzU.jpg:large">
     <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css'>
     <link rel="stylesheet" type="text/css" href="./assets/css/accordeonP3.css" />
@@ -66,14 +66,13 @@
 
           </div> 
           <div class="page" id="p5">
-            <?php include('./includes/page5.php'); ?>
+            <?php include('./includes/test.php'); ?>
             </div>
 <footer>
 <h1>Mentions légales  |  © 2016 Emilie Chartier & Thomas Merlin. All rights reserved.</h1>   
 </footer>
 
     
-    <script src="http://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <script type="text/javascript" src="./assets/js/bootstrap/bootstrap.min.js"></script>
     <script src='http://cdn.ractivejs.org/latest/ractive.js'></script>

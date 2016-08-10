@@ -25,7 +25,7 @@ $message_formulaire_invalide = "Vérifiez que tous les champs soient bien rempli
 */
  
 // on teste si le formulaire a été soumis
-if (!isset($_POST['submit']))
+if (!isset($_POST['envoi']))
 {
 	// formulaire non envoyé
 	echo '<p>'.$message_erreur_formulaire.'</p>'."\n";
@@ -50,28 +50,27 @@ else
 	/*
 	 * Cette fonction sert à vérifier la syntaxe d'un email
 	 */
-	function IsEmail($email)
 	{
-		$value = preg_match('#^[\w.-]+@[\w.-]+\.[a-z]{2,6}$#i', $email);
+		$value = preg_match('/^[-+.w]{1,64}@[-.w]{1,64}.[-.w]{2,6}$/i', $mail);
 		return (($value === 0) || ($value === false)) ? false : true;
 	}
  
 	// formulaire envoyé, on récupère tous les champs.
-	$nom     = (isset($_POST['name']))     ? Rec($_POST['name'])     : '';
+	$name    = (isset($_POST['name']))     ? Rec($_POST['name'])     : '';
 	$phone   = (isset($_POST['phone']))   ? Rec($_POST['phone'])   : '';
-	$email   = (isset($_POST['mail']))   ? Rec($_POST['mail'])   : '';
-	$objet   = (isset($_POST['subject']))   ? Rec($_POST['subject'])   : '';
+	$mail   = (isset($_POST['mail']))   ? Rec($_POST['mail'])   : '';
+	$subject   = (isset($_POST['subject']))   ? Rec($_POST['subject'])   : '';
 	$message = (isset($_POST['message'])) ? Rec($_POST['message']) : '';
  
 	// On va vérifier les variables et l'email ...
-	$email = (IsEmail($email)) ? $email : ''; // soit l'email est vide si erroné, soit il vaut l'email entré
+	$mail = (IsEmail($mail)) ? $mail : ''; // soit l'email est vide si erroné, soit il vaut l'email entré
  
-	if (($nom != '') && ($email != '') && ($objet != '') && ($message != ''))
+	if (($name != '') && ($mail != '') && ($subject != '') && ($message != ''))
 	{
 		// les 4 variables sont remplies, on génère puis envoie le mail
 		$headers  = 'MIME-Version: 1.0' . "\r\n";
-		$headers .= 'From:'.$nom.' <'.$email.'>' . "\r\n" .
-				'Reply-To:'.$email. "\r\n" .
+		$headers .= 'From:'.$name.' <'.$mail.'>' . "\r\n" .
+				'Reply-To:'.$mail. "\r\n" .
 				'Content-Type: text/plain; charset="utf-8"; DelSp="Yes"; format=flowed '."\r\n" .
 				'Content-Disposition: inline'. "\r\n" .
 				'Content-Transfer-Encoding: 7bit'." \r\n" .
@@ -80,7 +79,7 @@ else
 		// envoyer une copie au visiteur ?
 		if ($copie == 'oui')
 		{
-			$cible = $destinataire.';'.$email;
+			$cible = $destinataire.';'.$mail;
 		}
 		else
 		{
@@ -120,5 +119,5 @@ else
 		// une des 3 variables (ou plus) est vide ...
 		echo '<p>'.$message_formulaire_invalide.' <a href="page5.php">Retour au formulaire</a></p>'."\n";
 	};
-}; // fin du if (!isset($_POST['envoi']))
+}; 
 ?>
