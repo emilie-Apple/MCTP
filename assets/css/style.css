@@ -12,7 +12,6 @@ html, body, .page {
   color: #fff;
   overflow: hidden;
   font-family: 'Raleway', sans-serif;
-
 }
 * {
   font-family: 'Raleway', sans-serif;
@@ -40,9 +39,6 @@ html, body, .page {
       background-attachment: fixed;
       background-size: cover;
       }
-#p2 { background-color: silver; }
-
-
 #p2 { background: silver; }
 #p3 { background: linear-gradient(to top, blue, rgba(0,255,0,0)); }
 #p4 { background: deeppink; }
@@ -293,8 +289,8 @@ p {
   margin-top: 30px;
   text-align: left;
   margin-left: 250px;
-
 }
+/*contact page 5*/
 
 /*contact*/
 

@@ -34,9 +34,9 @@
                                 </section>
 
                                 <?php
-                                    include('./includes/accordeon/maconnerie.php');
-                                    include('./includes/accordeon/carrelage.php');
-                                    include('./includes/accordeon/terrassement.php');
-                                    include('./includes/accordeon/placo.php');
+                                    include('./includes/accordeonActivite/maconnerie.php');
+                                    include('./includes/accordeonActivite/carrelage.php');
+                                    include('./includes/accordeonActivite/terrassement.php');
+                                    include('./includes/accordeonActivite/placo.php');
                                 ?>
 

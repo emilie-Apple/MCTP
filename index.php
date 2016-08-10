@@ -12,7 +12,9 @@
     <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
     <link rel="stylesheet" type="text/css" href="./assets/css/accordeonP3.css" />
     <link rel="stylesheet" type="text/css" href="./assets/css/realisations.css" />
+    <link rel="stylesheet" type="text/css" href="./assets/css/page4/carousel.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+      <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js"></script>
     <script src="js/prefixfree.min.js"></script>  
   </head>
 
@@ -129,7 +131,6 @@
 <footer>
 <h1>Mentions légales  |  © 2016 Emilie Chartier & Thomas Merlin. All rights reserved.</h1>   
 </footer>
-
     
     <script src="http://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
@@ -138,6 +139,7 @@
     <script src="./assets/js/index.js"></script>  
     <script src='./assets/js/modal.js' type="text/javascript"></script> 
     <script src="./assets/js/realisations.js" type="text/javascript"></script>
+    <script src="./assets/js/carousel.js" type="text/javascript"></script>
     
 
     <script>
