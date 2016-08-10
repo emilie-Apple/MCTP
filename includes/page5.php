@@ -49,7 +49,7 @@
                     <div class="submit-card" on-click="toggle('flipCard')">Envoyer</div>
                   </div>
                   </div>
-                    </form>
+                   
                   </div>
                   </div>
                   <div class="front paper"></div>

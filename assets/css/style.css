@@ -12,6 +12,7 @@ html, body, .page {
   color: #fff;
   overflow: hidden;
   font-family: 'Raleway', sans-serif;
+
 }
 * {
   font-family: 'Raleway', sans-serif;
@@ -39,8 +40,11 @@ html, body, .page {
       background-attachment: fixed;
       background-size: cover;
       }
+#p2 { background-color: silver; }
+
+
 #p2 { background: silver; }
-#p3 { background: linear-gradient(to top, blue, rgba(0,255,0,0)); }
+#p3 { background: gold; }
 #p4 { background: deeppink; }
 #p5 { background: #C5D0D4; }
 
@@ -186,7 +190,9 @@ a {
   -webkit-transition: all .5s cubic-bezier(.25, 1, .5, 1.25);
   -moz-transition: all .5s cubic-bezier(.25, 1, .5, 1.25);
   -o-transition: all .5s cubic-bezier(.25, 1, .5, 1.25);
+
 }
+
 
 .page#p1 .icon {
   height: 220px;
@@ -289,8 +295,8 @@ p {
   margin-top: 30px;
   text-align: left;
   margin-left: 250px;
+
 }
-/*contact page 5*/
 
 /*contact*/
 
@@ -300,6 +306,7 @@ p {
   width: 100%;
   padding-top: 700px;
   font-size: 20px;
+  background: linear-gradient(to top, blue, rgba(0,255,0,0));
 
 }
 .flip-card {
@@ -319,6 +326,7 @@ p {
   width: 30em;
   height: 35em;
   margin: 0 auto;
+  background: linear-gradient(to top, blue, rgba(0,255,0,0));
 }
 .envelope.active .content {
   padding: 15em 2em 2em;
@@ -343,6 +351,7 @@ p {
   animation-fill-mode: forwards;
   animation-delay: 1.25s;
   animation-name: envelope-back-before;
+
 }
 .envelope.active .bottom-wrapper {
   transform: rotateX(180deg);
@@ -350,6 +359,7 @@ p {
 .envelope.active .bottom-wrapper:after {
   z-index: 0;
   opacity: 1;
+  background: linear-gradient(to top, blue, rgba(0,255,0,0));
 }
 .envelope .content {
   padding: 2em;
@@ -672,6 +682,8 @@ footer h1 {
   margin-left: 0px;
   margin-right: 900px;
   margin-top: 200px;
+  z-index: 1;
+  position: relative;
 
 }
 
