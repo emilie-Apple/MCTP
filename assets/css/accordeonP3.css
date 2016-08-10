@@ -1,7 +1,7 @@
 /********************************************
           CSS Page 3 || Acordéon
 ********************************************/
-#section3 {
+#section3, #section4 {
   margin: 0;
   font: 400 16px/1.5em 'Source Sans Pro', 'Segoe UI', 'Helvetica Neue', Roboto, Arial, sans-serif;
   overflow: hidden;
@@ -155,7 +155,7 @@ button:focus{outline:none;}
    100% {width:200%;height:200%;margin:calc(275px - 100%) 0 0 calc(50% - 100%);}
 }
 
-.modal1, .modal2, .modal3, .modal4 {
+.modal1, .modal2, .modal3, .modal4, .modalRealisation1, .modalRealisation2, .modalRealisation3, .modalRealisation4 {
 	width: 80%;
 	position:absolute;
 	left:0%;
@@ -167,7 +167,7 @@ button:focus{outline:none;}
 	display:none;
 }
 
-.close1, .close2, .close3, .close4 {
+.close1, .close2, .close3, .close4, .closeRealisation1, .closeRealisation2, .closeRealisation3, .closeRealisation4 {
 	position: absolute;
     left: 2%;
     top: 3%;
@@ -198,13 +198,18 @@ button:focus{outline:none;}
     padding: 20px 40px;
 }
 
+.modal-content p {
+    padding: 20px;
+    margin-left: 0px;
+    text-align: justify;
+}
+
 .modal_button {
     padding: 10px 20px !important;
     font-size: 1.2em;
     background-color: #997191;
     border-radius: 4px;
     border: solid thin #4D4D50;
-    box-shadow: 5px 5px 5px #4D4D50;
     color: white;
     text-shadow: 2px 2px gray;
     float: right;
