@@ -3,9 +3,9 @@
     <div class="modal-header">
         <h1>Maçonnerie</h1>
     </div>
-    <div class="modal-strip">
-        <img alt="Test d'image" src="./assets/img/imagetest.jpg" />
-    </div>
+    <div class="modal-strip"></div>
+    <div class="modal-strip"></div>
+    <div class="modal-strip"></div>
     <div class='modal-content'>
         <p>Spécialiste de la maçonnerie traditionnelle et de la couverture, <br />
         M.C.T.P sera à votre écoute pour votre projet, que ce soit pour un projet de rénovation, ou de construction, petites et grandes surfaces. </p>
