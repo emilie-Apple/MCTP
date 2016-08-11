@@ -15,10 +15,13 @@
     <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<<<<<<< HEAD
 
+=======
+>>>>>>> 233828550bcf5f7ddb8b12775e73b634ccd3f089
   </head>
 
-  <body>
+  <body> 
 
     <div class="ct" id="t1">
   <div class="ct" id="t2">
