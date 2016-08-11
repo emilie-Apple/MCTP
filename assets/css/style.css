@@ -44,8 +44,8 @@ html, body, .page {
 
 
 #p2 { background: silver; }
-#p3 { background: gold; }
-#p4 { background: deeppink; }
+#p3 { background: ; }
+#p4 { background: ; }
 #p5 { background: #C5D0D4; }
 
 #t2:target #p2,
@@ -124,15 +124,16 @@ ul .icon:hover {
   -webkit-transition: all .5s ease-out;
   -moz-transition: all .5s ease-out;
   -o-transition: all .5s ease-out;
-  font-size: 20px;
+  font-size: 18px;
+
 }
 
-li {
+.boutonMenu {
   background-color: #5A4AE8;
   border-radius: 15px 50px 30px;
   border: 1px solid #a1a1a1;
   width: 190px;
-  height: 30px;
+  height: 32px;
   padding: 5px;
 
 }
@@ -309,8 +310,8 @@ p {
   background: linear-gradient(to top, blue, rgba(0,255,0,0));
 
 }
-.flip-card {
 
+.flip-card {
   position: fixed;
   top: 1em;
   left: 1em;
@@ -326,7 +327,7 @@ p {
   width: 30em;
   height: 35em;
   margin: 0 auto;
-  background: linear-gradient(to top, blue, rgba(0,255,0,0));
+  
 }
 .envelope.active .content {
   padding: 15em 2em 2em;
@@ -359,7 +360,7 @@ p {
 .envelope.active .bottom-wrapper:after {
   z-index: 0;
   opacity: 1;
-  background: linear-gradient(to top, blue, rgba(0,255,0,0));
+  
 }
 .envelope .content {
   padding: 2em;
@@ -400,7 +401,6 @@ p {
   content: '';
   display: block;
   opacity: 0;
-  background: #03a9f5;
   top: 0;
   left: 0;
   width: 100%;
@@ -419,6 +419,7 @@ p {
   box-shadow: 0;
   background: transparent;
   color: #fff;
+  font-size: 15px;
 }
 .envelope form input {
   border-width: 0 0 0.1em;
