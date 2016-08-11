@@ -15,11 +15,7 @@
     <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-<<<<<<< HEAD
-    
-    
-=======
->>>>>>> 282ff44629df9eea85272d72bb56e4a80e002bfe
+
   </head>
 
   <body>
@@ -51,7 +47,7 @@
           <div id="circle-shape-example">
             <img src="assets/img/logo.png" alt="logo" class="logo">
             <h4>Présentation</h4>
-            <p>L'entreprise <strong>M-C-T-P </strong> situé dans la région du Loiret à Nangeville (45330) <br/>
+            <p>L'entreprise <strong>M-C-T-P </strong> situé dans la région du Loiret à <a data-toggle="tooltip" href="http://www.pagesjaunes.fr/pros/detail?bloc_id=0634183190558587290001C0001&no_sequence=0&code_rubrique=30450600#plan" title="Localisation">Nangeville (45330)</a> <br/>
                 est une entreprise de maçonnerie générale créée en 2013 par Fabien TECHER.</p>
             <p>Avec l’aide de son associé Grégory et d’une équipe de 6 personnes, l’entreprise <br/>
                 <strong>M-C-T-P </strong>met toutes ses compétences et son savoir faire à votre service .<br/>
