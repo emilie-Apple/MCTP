@@ -113,6 +113,10 @@ h2 {
   text-shadow: 0 0 10px rgba(0,0,0,0.5);
 }
 
+.designInitiales {
+  color: #02007C;
+}
+
 /********************************************
           CSS Page 3 || Modal
 ********************************************/
@@ -188,10 +192,11 @@ button:focus{outline:none;}
     text-align: center;
 }
 
-.modal-strip img {
-    height: 150px;
-    width: 100%;
-    white-space: nowrap;
+.modal-strip {
+    width: 33%;
+    height: 300px;
+    border: 1px solid white;
+    display: inline-block;
 }
 
 .modal-content {
@@ -218,8 +223,4 @@ button:focus{outline:none;}
 
 .modal_button:hover {
   box-shadow: 5px 0px 5px lightgray;
-}
-
-@media screen and(max-width: 1024px) {
-    
 }
