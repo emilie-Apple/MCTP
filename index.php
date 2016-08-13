@@ -15,10 +15,6 @@
     <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-<<<<<<< HEAD
-
-=======
->>>>>>> 233828550bcf5f7ddb8b12775e73b634ccd3f089
   </head>
 
   <body> 
@@ -91,7 +87,12 @@
             $('.xsResponsiveMenu-ContentLink').on('click', function() {
                 $('#trigger').click();
             })
-        </script>
+    </script>
+
+    <script language="text/javascript">
+console.log('<br>Votre résolution est de '.screen.width+'x'+screen.height);
+
+</script>
 
         </body>
     </html>
