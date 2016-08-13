@@ -1,7 +1,6 @@
-<form id="contact" method="post" action="traitement_formulaire.php">
 <section class="icon fa fa-plus-envelope">
               
-                
+    <form id="contact" method="post" action="traitement_formulaire.php">            
   <div id="container"></div>
   
   <script id="template">
@@ -12,16 +11,15 @@
           <div class="back paper"></div>
           <div class="content">
             <div class="form-wrapper">
-
-              
+              <form>
                 <div class="top-wrapper">
                   <div class="input">
                     <label for="name">Nom</label>
-                    <input type="text" name="name" placeholder="Madame, Monsieur"/>
+                    <input type="text" name="name" placeholder="Madame, Monsieur" required="required"/>
                   </div>
                   <div class="input">
                     <label for="phone">Téléphone</label>
-                    <input type="text" name="phone" placeholder=""/>
+                    <input type="text" name="phone" placeholder="06" required="required"/>
                   </div>
                   <div class="input">
                     <label for="mail">Email</label>
@@ -43,7 +41,7 @@
                   </div>
                   <div class="input">
                     <label for="message">Message</label>
-                    <textarea rows="8" name="message"></textarea>
+                    <textarea rows="6" name="message"></textarea>
                   </div>
                   <div class="input" type="submit" name="envoi" value="Envoyer">
                     <div class="submit-card" on-click="toggle('flipCard')">Envoyer</div>
@@ -61,9 +59,7 @@
             </div>  
             
           </section>
-          </form>
           </div> 
-
         </div>
       </div>
     </div>

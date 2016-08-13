@@ -12,6 +12,7 @@ html, body, .page {
   color: #fff;
   overflow: hidden;
   font-family: 'Raleway', sans-serif;
+
 }
 * {
   font-family: 'Raleway', sans-serif;
@@ -39,9 +40,12 @@ html, body, .page {
       background-attachment: fixed;
       background-size: cover;
       }
+#p2 { background-color: silver; }
+
+
 #p2 { background: silver; }
-#p3 { background: linear-gradient(to top, blue, rgba(0,255,0,0)); }
-#p4 { background: deeppink; }
+#p3 { background: ; }
+#p4 { background: ; }
 #p5 { background: #C5D0D4; }
 
 #t2:target #p2,
@@ -120,7 +124,8 @@ ul .icon:hover {
   -webkit-transition: all .5s ease-out;
   -moz-transition: all .5s ease-out;
   -o-transition: all .5s ease-out;
-  font-size: 20px;
+  font-size: 18px;
+
 }
 
 .boutonMenu {
@@ -128,7 +133,7 @@ ul .icon:hover {
   border-radius: 15px 50px 30px;
   border: 1px solid #a1a1a1;
   width: 190px;
-  height: 30px;
+  height: 32px;
   padding: 5px;
 
 }
@@ -186,7 +191,9 @@ a {
   -webkit-transition: all .5s cubic-bezier(.25, 1, .5, 1.25);
   -moz-transition: all .5s cubic-bezier(.25, 1, .5, 1.25);
   -o-transition: all .5s cubic-bezier(.25, 1, .5, 1.25);
+
 }
+
 
 .page#p1 .icon {
   height: 220px;
@@ -289,8 +296,8 @@ p {
   margin-top: 30px;
   text-align: left;
   margin-left: 250px;
+
 }
-/*contact page 5*/
 
 /*contact*/
 
@@ -300,10 +307,11 @@ p {
   width: 100%;
   padding-top: 700px;
   font-size: 20px;
+  background: linear-gradient(to top, blue, rgba(0,255,0,0));
 
 }
-.flip-card {
 
+.flip-card {
   position: fixed;
   top: 1em;
   left: 1em;
@@ -319,6 +327,7 @@ p {
   width: 30em;
   height: 35em;
   margin: 0 auto;
+  
 }
 .envelope.active .content {
   padding: 15em 2em 2em;
@@ -343,6 +352,7 @@ p {
   animation-fill-mode: forwards;
   animation-delay: 1.25s;
   animation-name: envelope-back-before;
+
 }
 .envelope.active .bottom-wrapper {
   transform: rotateX(180deg);
@@ -350,6 +360,7 @@ p {
 .envelope.active .bottom-wrapper:after {
   z-index: 0;
   opacity: 1;
+  
 }
 .envelope .content {
   padding: 2em;
@@ -390,7 +401,6 @@ p {
   content: '';
   display: block;
   opacity: 0;
-  background: #03a9f5;
   top: 0;
   left: 0;
   width: 100%;
@@ -409,6 +419,7 @@ p {
   box-shadow: 0;
   background: transparent;
   color: #fff;
+  font-size: 15px;
 }
 .envelope form input {
   border-width: 0 0 0.1em;
@@ -672,6 +683,8 @@ footer h1 {
   margin-left: 0px;
   margin-right: 900px;
   margin-top: 200px;
+  z-index: 1;
+  position: relative;
 
 }
 
