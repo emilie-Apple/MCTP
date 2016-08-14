@@ -1,6 +1,5 @@
 <section class="icon fa fa-plus-envelope">
-              
-    <form id="contact" method="post" action="traitement_formulaire.php">            
+                
   <div id="container"></div>
   
   <script id="template">
@@ -11,7 +10,7 @@
           <div class="back paper"></div>
           <div class="content">
             <div class="form-wrapper">
-              <form>
+              <form id="contact" method="post" action="traitement_formulaire.php">
                 <div class="top-wrapper">
                   <div class="input">
                     <label for="name">Nom</label>
@@ -28,6 +27,7 @@
                 </div>
 
                 <div class="bottom-wrapper">
+                
                   <div class="input">
                     <label for="subject">Type de travaux</label>
                     <select name="subject" id="subject">
@@ -51,13 +51,14 @@
                   </div>
                   </div>
                   <div class="front paper"></div>
-                  </div>
+                  </div>      
                   
         </script>
             <div class="carte_visite">
               <img src="./assets/img/cv.jpg">
-            </div>  
-            
+            </div> 
+
+          </div>
           </section>
           </div> 
         </div>

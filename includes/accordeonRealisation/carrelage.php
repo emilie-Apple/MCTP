@@ -11,11 +11,11 @@
     <input type="radio" id="carousel-4-2" name="carousel[]">
     <input type="radio" id="carousel-5-2" name="carousel[]">
     <ul class="carousel__items">
-      <li class="carousel__item"><img src="//lh5.googleusercontent.com/-cTEgPOnd3l8/U8-EmaZ4KNI/AAAAAAAABc8/6eacbALkQ6A/w1358-h905-no/carousel-1.JPG" alt=""></li>
-      <li class="carousel__item"><img src="//lh4.googleusercontent.com/-ntVHbbWX5eo/U8-EmV8P4cI/AAAAAAAABc4/ICYBGkcztTc/w1358-h905-no/carousel-2.jpg" alt=""></li>
-      <li class="carousel__item"><img src="//lh5.googleusercontent.com/-batEXUZE_e4/U8-EmLF9-hI/AAAAAAAABc0/J3tJVUa6Buk/w1358-h905-no/carousel-3.jpg" alt=""></li>
-      <li class="carousel__item"><img src="//lh5.googleusercontent.com/-gywqIeMvel0/U8-EolKdtkI/AAAAAAAABdM/G0-NHuvvJUU/w1358-h905-no/carousel-4.jpg" alt=""></li>
-      <li class="carousel__item"><img src="//lh5.googleusercontent.com/--2iANjL3ikc/U8-EoGJ18mI/AAAAAAAABdI/fBe-q3Gos6Y/w1358-h905-no/carousel-5.jpg" alt=""></li>
+      <li class="carousel__item"><img src="./assets/img/sdb3.jpg"></li>
+      <li class="carousel__item"><img src="./assets/img/carrelage1.jpg"></li>
+      <li class="carousel__item"><img src="./assets/img/carrelage3.jpg"></li>
+      <li class="carousel__item"><img src="./assets/img/sdb10.jpg"></li>
+      <li class="carousel__item"><img src="./assets/img/sdb13.jpg"></li>
     </ul>
      <div class="carousel__prev">
       <label for="carousel-1-2"></label>

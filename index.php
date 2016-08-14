@@ -15,10 +15,7 @@
     <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-<<<<<<< HEAD
 
-=======
->>>>>>> 233828550bcf5f7ddb8b12775e73b634ccd3f089
   </head>
 
   <body> 
@@ -38,13 +35,18 @@
             </ul>
           <div class="page" id="p1">
              <section class="accueil"></section> 
+             <div class="logo_artisan">
+              <img src="./assets/img/artisan.jpg">
+            </div> 
           <div id="box1" class="box blurred-bg tinted">
   <div class="content">
       <h3><i class="fa fa-phone" aria-hidden="true">  06.34.18.31.90</i></h3>
       
   </div>
+  
 </div>
           </div>
+
           <div class="page" id="p2">
           <section class="icon fa fa-users"><span class="title">Qui sommes-nous ?</span>
           <div id="circle-shape-example">

@@ -101,6 +101,7 @@
 .carousel__item img {
   width: 100%;
   vertical-align: middle;
+  height: 90%;
 }
 .carousel__prev > label, .carousel__next > label {
   border: 1px solid #fff;
