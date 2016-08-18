@@ -3,10 +3,10 @@
 <html >
   <head>
     <meta charset="UTF-8">
-    <title>M.C.T.P</title>
+    <title>M-C-T-P</title>
     <meta name="viewport" content="initial-scale=1.0, user-scalable=yes" />
     <meta name="description" content="MCTP site de maçonnerie">
-    <meta name="keywords" content="maçonnerie, matériaux, maçon, béton, terrassement, carrelage, travaux publics, terrasse, MCTP">
+    <meta name="keywords" content="maçonnerie, matériaux, maçon, béton, terrassement, carrelage, travaux publics, terrasse, MCTP, m-c-t-p">
     <meta property="og:image" content="https://pbs.twimg.com/media/CCNJN_XUMAAJSzU.jpg:large">
     <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css' />
     <link rel="stylesheet" type="text/css" href="./assets/css/accordeonP3.css" />
