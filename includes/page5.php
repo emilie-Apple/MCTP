@@ -4,7 +4,7 @@
   
   <script id="template">
   
-    <div class="flip-card" on-click="toggle('flipCard')">{{ flipCard ? 'Renvoyer un mail' : 'Contactez-nous' }}</div>
+    <div class="flip-card" on-click="toggle('flipCard')">{{ flipCard ? 'Votre email a bien été envoyé !' : 'Contactez-nous' }}</div>
     <div class="contact-wrapper">
         <div class="envelope {{ flipCard ? 'active' : '' }}">
           <div class="back paper"></div>
