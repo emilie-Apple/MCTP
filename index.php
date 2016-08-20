@@ -13,9 +13,8 @@
     <link rel="stylesheet" type="text/css" href="./assets/css/realisations.css" />
     <link rel="stylesheet" type="text/css" href="./assets/css/page4/carousel.css" />
     <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
-    <link href='http://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet' type='text/css'/>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-
+    
+    
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 
   </head>
@@ -81,22 +80,18 @@
 <h1>Mentions légales  |  © 2016 Emilie Chartier & Thomas Merlin. All rights reserved.</h1>   
 </footer>
     
-    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    
     <script type="text/javascript" src="./assets/js/bootstrap/bootstrap.min.js"></script>
     <script src="./assets/js/realisations.js" type="text/javascript"></script>
     <script src="./assets/js/carousel.js" type="text/javascript"></script>
-    
-    <script src="./assets/js/index.js"></script>  
+     
     <script src="./assets/js/prefixfree.min.js"></script>
     <script src='./assets/js/modal.js' type="text/javascript"></script> 
-    <script src="js/index.js"></script>
+    
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     
 
-    <script>
-            $('.xsResponsiveMenu-ContentLink').on('click', function() {
-                $('#trigger').click();
-            })
-        </script>
+  
 
         </body>
     </html>

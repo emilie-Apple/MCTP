@@ -35,10 +35,11 @@
       <div class = "right"></div>
       <div class = "top"></div>
   
-     <script src="js/script.js"></script>
-    </div>
+     <script src="./assets/js/script.js"></script>
+    
    
     <script src="./assets/js/index.js"></script>
+    </div>
     <div class="carte_visite">
               <img src="./assets/img/cv.jpg">
             </div>

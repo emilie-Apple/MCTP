@@ -25,7 +25,7 @@ $message_formulaire_invalide = "Vérifiez que tous les champs soient bien rempli
 */
  
 // on teste si le formulaire a été soumis
-if (!isset($_POST['envoi']))
+if (!isset($_POST['submit']))
 {
 	// formulaire non envoyé
 	echo '<p>'.$message_erreur_formulaire.'</p>'."\n";

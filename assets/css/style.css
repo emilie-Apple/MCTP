@@ -40,12 +40,12 @@ html, body, .page {
       background-attachment: fixed;
       background-size: cover;
       }
-#p2 { background-color: silver; }
 
 
 #p2 { background: silver; }
 #p3 { background: ; }
 #p4 { background: ; }
+#p5 { background: ; }
 
 
 #t2:target #p2,
