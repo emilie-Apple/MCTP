@@ -1,68 +1,44 @@
-<section class="icon fa fa-plus-envelope">
-                
-  <div id="container"></div>
-  
-  <script id="template">
-  
-    <div class="flip-card" on-click="toggle('flipCard')">{{ flipCard ? 'Votre email a bien été envoyé !' : 'Contactez-nous' }}</div>
-    <div class="contact-wrapper">
-        <div class="envelope {{ flipCard ? 'active' : '' }}">
-          <div class="back paper"></div>
-          <div class="content">
-            <div class="form-wrapper">
-              <form id="contact" method="post" action="traitement_formulaire.php">
-                <div class="top-wrapper">
-                  <div class="input">
-                    <label for="name">Nom</label>
-                    <input type="text" name="name" placeholder="Madame, Monsieur" required="required"/>
-                  </div>
-                  <div class="input">
-                    <label for="phone">Téléphone</label>
-                    <input type="text" name="phone" placeholder="06" required="required"/>
-                  </div>
-                  <div class="input">
-                    <label for="mail">Email</label>
-                    <input type="text" name="mail" placeholder="nom@gmail.com"/>
-                  </div>
-                </div>
+<div class = "frame">
 
-                <div class="bottom-wrapper">
-                
-                  <div class="input">
-                    <label for="subject">Type de travaux</label>
-                    <select name="subject" id="subject">
-           <option value="Maconnerie">Maconnerie</option>
-           <option value="Terrassement">Terrassement</option>
-           <option value="Agrandissement">Agrandissement</option>
-           <option value="Carrelage">Carrelage</option>
-           <option value="Plomberie">Plomberie</option>
-           <option value="Autres">Autres</option>
-                    
-                  </div>
-                  <div class="input">
-                    <label for="message">Message</label>
-                    <textarea rows="6" name="message"></textarea>
-                  </div>
-                  <div class="input" type="submit" name="envoi" value="Envoyer">
-                    <div class="submit-card" on-click="toggle('flipCard')">Envoyer</div>
-                  </div>
-                  </div>
-                    </form>
-                  </div>
-                  </div>
-                  <div class="front paper"></div>
-                  </div>      
-                  
-        </script>
-            <div class="carte_visite">
-              <img src="./assets/img/cv.jpg">
-            </div> 
-
-          </div>
-          </section>
-          </div> 
-        </div>
+<div id = "button_open_envelope">
+        Envoyez un mail
       </div>
+
+           
+      <div class = "message">
+        <form method="post" action="traitement_formulaire.php">
+          
+            <input type="text" name="Nom" id="name" placeholder="Nom*" required>
+    
+            <input type="text" name="Téléphone" id="phone" placeholder=" Tél (optionel)" autofocus> 
+            <input type="email" name="Email" id="email" placeholder=" Email* " required pattern="^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$">
+
+            <label>Type de travaux</label>
+            <select name="Sujet" id="subject">
+            <option value="Maconnerie">Maconnerie</option>
+            <option value="Terrassement">Terrassement</option>
+            <option value="Agrandissement">Agrandissement</option>
+            <option value="Carrelage">Carrelage</option>
+            <option value="Plomberie">Plomberie</option>
+            <option value="Autres">Autres</option>
+                    
+               
+          <textarea name="Message" id="messarea" placeholder=" Votre Message* " required></textarea>
+                
+            <input type="submit" value="Envoyer" id="send">
+        </form>
+
+      </div>
+       
+      <div class = "bottom"></div>      
+      <div class = "left"></div>
+      <div class = "right"></div>
+      <div class = "top"></div>
+  
+     <script src="js/script.js"></script>
     </div>
-  </div>
-</div>
+   
+    <script src="./assets/js/index.js"></script>
+    <div class="carte_visite">
+              <img src="./assets/img/cv.jpg">
+            </div>

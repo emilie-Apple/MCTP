@@ -46,7 +46,7 @@ html, body, .page {
 #p2 { background: silver; }
 #p3 { background: ; }
 #p4 { background: ; }
-#p5 { background: #C5D0D4; }
+
 
 #t2:target #p2,
 #t3:target #p3,
@@ -301,357 +301,222 @@ p {
 
 /*contact*/
 
-.contact-wrapper {
-  position: absolute;
-  transform: translateY(-50%);
+form input {
+
+  background-color: gray;
+}
+
+form textarea{
+  background-color: gray;
   width: 100%;
-  padding-top: 700px;
+  padding-right: 0;
+
+
+}
+
+.carte_visite img{
+  
+margin-top: -500px;
+width: 20%;
+
+
+}
+.frame{
+  width: 600px;
+  height: 350px;
+  margin: 250px auto 0;
+  position: relative;
+  background: silver;
+  border-radius:0 0 40px 40px; 
+}
+#button_open_envelope{
+  width: 220px;
+  height: 50px;
+  position: absolute;
+  z-index: 311;
+  top: 250px;
+  left: 208px;
+  border-radius: 10px;
+  color: #fff;
   font-size: 20px;
-  background: linear-gradient(to top, blue, rgba(0,255,0,0));
-
-}
-
-.flip-card {
-  position: fixed;
-  top: 1em;
-  left: 1em;
-  width: 7em;
-  padding: 0.5em;
+  padding:15px; 
+  border: 2px solid #fff;
+  transition:.3s;
   text-align: center;
-  cursor: pointer;
-  z-index: 9;
 }
-.envelope {
+#button_open_envelope:hover{
+  background: #FFf;
+  color: #2b67cb;
+  transform:scale(1.1);
+  transition:background .25s, transform .5s,ease-in;
+  cursor: pointer;
+}
+.message{
   position: relative;
-  display: block;
-  width: 30em;
-  height: 35em;
+  width: 580px;
+  min-height:300px;
+  height: auto;
+  background: gray;
   margin: 0 auto;
-  
+  box-shadow: 0 0 5px 2px #333;
+  transition:2s ease-in-out;
+  transition-delay:1.5s;
+  z-index: 300;
 }
-.envelope.active .content {
-  padding: 15em 2em 2em;
+.left,.right,.top{width: 0; height: 0;position:absolute;top:0;z-index: 310;}
+.left{  
+  border-left: 300px solid #337efc;
+  border-top: 160px solid transparent;
+  border-bottom: 160px solid transparent;
 }
-.envelope.active .paper.front,
-.envelope.active .paper.back {
-  animation-duration: 1.5s;
-  animation-direction: normal;
-  animation-timing-function: ease-in-out;
-  animation-fill-mode: forwards;
+.right{ 
+  border-right: 300px solid #337efc;
+  border-top: 160px solid transparent;
+  border-bottom: 160px solid transparent;;
+  left:300px;
 }
-.envelope.active .paper.front {
-  animation-name: envelope-front;
+.top{ 
+  border-right: 300px solid transparent;
+  border-top: 200px solid #03A9F4;
+  border-left: 300px solid transparent;
+  transition:transform 1s,border 1s, ease-in-out;
+  transform-origin:top;
+  transform:rotateX(0deg);
+  z-index: 500;
 }
-.envelope.active .paper.back {
-  animation-name: envelope-back;
-}
-.envelope.active .paper.back:before {
-  animation-duration: 0.5s;
-  animation-direction: normal;
-  animation-timing-function: ease-in-out;
-  animation-fill-mode: forwards;
-  animation-delay: 1.25s;
-  animation-name: envelope-back-before;
-
-}
-.envelope.active .bottom-wrapper {
-  transform: rotateX(180deg);
-}
-.envelope.active .bottom-wrapper:after {
-  z-index: 0;
-  opacity: 1;
-  
-}
-.envelope .content {
-  padding: 2em;
-  box-sizing: border-box;
-  position: relative;
-  z-index: 9;
-  transition: all 0.5s ease-in-out;
-  transition-delay: 1s;
-
-}
-.envelope .top-wrapper,
-.envelope .bottom-wrapper {
-  box-sizing: border-box;
-  background: gray;
-  color: #fff;
-  font-size: 15px;
-
-}
-.envelope .top-wrapper {
-  padding: 2em 2em 0;
-  border-top-left-radius: 0.5em;
-  border-top-right-radius: 0.5em;
-}
-.envelope .bottom-wrapper {
-  padding: 0 2em 2em;
-  border-bottom-left-radius: 0.5em;
-  border-bottom-right-radius: 0.5em;
-  transition: all 0.5s ease-in-out;
-  transform-origin: top;
-  transform-style: preserve-3d;
-  position: relative;
-  overflow: hidden;
-  margin-top: -1px;
-
-}
-.envelope .bottom-wrapper:after {
+.bottom{
+  width: 600px;
+  height: 190px;
   position: absolute;
-  content: '';
-  display: block;
-  opacity: 0;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
-  background: gray;
+  background: #2b67cb;
+  top: 160px;
+  border-radius:0 0 30px 30px;
+  z-index: 310; 
 }
-.envelope form label {
-  display: block;
-  padding-bottom: 0.5em;
 
+.open{
+  transform-origin:top;
+  transform:rotateX(180deg);
+  transition:transform .7s,border .7s,z-index .7s ease-in-out;
+  border-top: 200px solid silver;
+  z-index: 200;
 }
-.envelope form input,
-.envelope form textarea {
-  width: 100%;
-  box-shadow: 0;
-  background: transparent;
-  color: #fff;
-  font-size: 15px;
+.pull{
+  -webkit-animation:message_animation 2s 1 ease-in-out;
+  animation:message_animation 2s 1 ease-in-out;
+  -webkit-animation-delay:.9s;
+  animation-delay:.45s;
+  transition:1.5s;
+  transition-delay:1s;
+  z-index: 350;
 }
-.envelope form input {
-  border-width: 0 0 0.1em;
-  border-color: #fff;
-  border-style: solid;
-}
-.envelope form textarea {
-  border: 0.1em solid #fff;
-  border-radius: 0.25em;
-}
-.envelope form .submit-card {
-  background: #fff;
-  color: #222;
+#name,#email,#phone,#messarea,#send{
+  margin: 0;
+  padding: 0 0 0 10px;
+  width: 570px;
+  height:45px;
+  float: left;
+  display: block;
+  font-size: 14px;
+  color: white;
+  border:none;
+  border-bottom:1px solid #bdbdbd;
+  letter-spacing: normal;
   text-align: center;
-  padding: 0.5em;
-  box-sizing: border-box;
-  background: #fff;
-  width: 100%;
-  border: 0;
-  box-shadow: none;
-  border-radius: 0.25em;
-  cursor: pointer;
 }
-.envelope form .input {
-  padding-bottom: 1em;
+#messarea{
+  height: 117px;
+  width: 560px;
+  overflow: auto;
+  border:none;
+  padding: 10px;
 }
-.envelope .paper {
-  position: absolute;
-  display: block;
-  top: 0;
-  left: 0;
-  border-bottom-left-radius: 0.5em;
-  border-bottom-right-radius: 0.5em;
-  overflow: hidden;
+
+label {
+  padding-left: 150px;
+
 }
-.envelope .paper.back {
-  top: 0;
+
+select {
+  border: none;
+  border-bottom: 1px solid #bdbdbd;
 }
-.envelope .paper.back:before {
-  content: '';
-  display: block;
-  width: 0;
-  height: 0;
-  margin-bottom: -1px;
-  border-style: solid;
-  border-width: 0 15em 10em 15em;
-  border-color: transparent transparent #d3d3d3 transparent;
-  transform-origin: bottom;
-  transform-style: preserve-3d;
-  z-index: 0;
+
+#send{ 
+  width:   580px;
+  padding: 0; 
+  border:  none;
+  cursor:  pointer;
+  background: white;
+  color: gray;
+  transition:.35s;
+  letter-spacing: 1px;
+  border: 1px solid gray;
 }
-.envelope .paper.back:after {
-  content: '';
-  display: block;
-  background-color: #d3d3d3;
-  width: 30em;
-  height: 20em;
+#send:hover{background:tomato;transition:.35s;}
+
+::-moz-placeholder{color: white;font-size: 16px;opacity: 1;} 
+::-webkit-input-placeholder {color: white; ;font-size: 16px;}
+*:focus {outline: none;}
+input:focus:invalid,textarea:focus:invalid {
+ /* when a field is considered invalid by the browser */
+    background: gray;
+    box-shadow: 0 0 5px #d45252;
+    border:1px solid #b03535;
 }
-.envelope .paper.front {
-  top: 10em;
-  box-shadow: 0.1em 0.1em 0.1em rgba(0,0,0,0.25);
-  z-index: 0;
+input:required:valid,textarea:required:valid { 
+  /* when a field is considered valid by the browser */
+    background: gray;
+    box-shadow: 0 0 5px #5cd053;
+    border-color: #28921f;
 }
-.envelope .paper.front:before {
-  content: '';
-  display: block;
-  width: 0;
-  height: 0;
-  border-style: solid;
-  border-width: 10em 15em 0 15em;
-  border-color: transparent #fff;
-}
-.envelope .paper.front:after {
-  content: '';
-  display: block;
-  width: 30em;
-  height: 10em;
-  background: #fff;
-  margin-top: -1px;
-}
-@-moz-keyframes envelope-front {
-  0 {
-    top: 10em;
-    z-index: 0;
+
+
+@-webkit-keyframes message_animation {
+  0%{
+    transform:translatey(0px);
+    z-index: 300;
+    transition: 1s ease-in-out;
   }
-  50% {
-    top: 15em;
-    z-index: 9;
+  50%{
+    transform:translatey(-340px);
+    z-index: 300;
+    transition: 1s ease-in-out;
   }
-  100% {
-    top: 10em;
-    z-index: 9;
+  51%{
+    transform:translatey(-340px);
+    z-index: 350;
+    transition: 1s ease-in-out;
+  }
+  100%{
+    transform:translatey(0px);
+    z-index: 350;
+    transition: 1s ease-in-out;
   }
 }
-@-webkit-keyframes envelope-front {
-  0 {
-    top: 10em;
-    z-index: 0;
+@keyframes message_animation {
+  0%{
+    transform:translatey(0px);
+    z-index: 300;
+    transition: 1s ease-in-out;
   }
-  50% {
-    top: 15em;
-    z-index: 9;
+  50%{
+    transform:translatey(-340px);
+    z-index: 300;
+    transition: 1s ease-in-out;
   }
-  100% {
-    top: 10em;
-    z-index: 9;
+  51%{
+    transform:translatey(-340px);
+    z-index: 350;
+    transition: 1s ease-in-out;
   }
-}
-@-o-keyframes envelope-front {
-  0 {
-    top: 10em;
-    z-index: 0;
-  }
-  50% {
-    top: 15em;
-    z-index: 9;
-  }
-  100% {
-    top: 10em;
-    z-index: 9;
+  100%{
+    transform:translatey(0px);
+    z-index: 350;
+    transition: 1s ease-in-out;
   }
 }
-@keyframes envelope-front {
-  0 {
-    top: 10em;
-    z-index: 0;
-  }
-  50% {
-    top: 15em;
-    z-index: 9;
-  }
-  100% {
-    top: 10em;
-    z-index: 9;
-  }
-}
-@-moz-keyframes envelope-back {
-  0 {
-    top: 0;
-  }
-  50% {
-    top: 5em;
-  }
-  100% {
-    top: 0;
-  }
-}
-@-webkit-keyframes envelope-back {
-  0 {
-    top: 0;
-  }
-  50% {
-    top: 5em;
-  }
-  100% {
-    top: 0;
-  }
-}
-@-o-keyframes envelope-back {
-  0 {
-    top: 0;
-  }
-  50% {
-    top: 5em;
-  }
-  100% {
-    top: 0;
-  }
-}
-@keyframes envelope-back {
-  0 {
-    top: 0;
-  }
-  50% {
-    top: 5em;
-  }
-  100% {
-    top: 0;
-  }
-}
-@-moz-keyframes envelope-back-before {
-  0 {
-    border-color: transparent transparent #d3d3d3 transparent;
-    transform: rotateX(0deg);
-    z-index: 0;
-  }
-  100% {
-    border-color: transparent transparent #fff transparent;
-    transform: rotateX(180deg);
-    z-index: 99;
-    position: relative;
-  }
-}
-@-webkit-keyframes envelope-back-before {
-  0 {
-    border-color: transparent transparent #d3d3d3 transparent;
-    transform: rotateX(0deg);
-    z-index: 0;
-  }
-  100% {
-    border-color: transparent transparent #fff transparent;
-    transform: rotateX(180deg);
-    z-index: 99;
-    position: relative;
-  }
-}
-@-o-keyframes envelope-back-before {
-  0 {
-    border-color: transparent transparent #d3d3d3 transparent;
-    transform: rotateX(0deg);
-    z-index: 0;
-  }
-  100% {
-    border-color: transparent transparent #fff transparent;
-    transform: rotateX(180deg);
-    z-index: 99;
-    position: relative;
-  }
-}
-@keyframes envelope-back-before {
-  0 {
-    border-color: transparent transparent #d3d3d3 transparent;
-    transform: rotateX(0deg);
-    z-index: 0;
-  }
-  100% {
-    border-color: transparent transparent #fff transparent;
-    transform: rotateX(180deg);
-    z-index: 99;
-    position: relative;
-  }
-}
+
 
 footer {
   position: relative;
@@ -678,15 +543,6 @@ footer h1 {
   bottom: 0px;
 }
 
-.carte_visite img{
-  width: 20%;
-  margin-left: 0px;
-  margin-right: 900px;
-  margin-top: 200px;
-  z-index: 1;
-  position: relative;
-
-}
 
 .logo_artisan img{
 

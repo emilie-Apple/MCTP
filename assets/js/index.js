@@ -1,5 +1,6 @@
-var ractive = new Ractive({
-  el: '#container',
-  template: '#template',
-  data: {}
+$(document).ready(function(){
+	$('.frame').click(function(){
+		$('.top').addClass('open');
+		$('.message').addClass('pull');
+	})
 });
