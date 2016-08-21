@@ -1,16 +1,17 @@
+<section class="icon fa fa-plus-envelope"></section>
 <div class = "frame">
 
 <div id = "button_open_envelope">
         Envoyez un mail
       </div>
 
-           
+          
       <div class = "message">
         <form method="post" action="traitement_formulaire.php">
           
             <input type="text" name="Nom" id="name" placeholder="Nom*" required>
     
-            <input type="text" name="Téléphone" id="phone" placeholder=" Tél (optionel)" autofocus> 
+            <input type="text" name="Téléphone" id="phone" placeholder=" Tél (optionel)" > 
             <input type="email" name="Email" id="email" placeholder=" Email* " required pattern="^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$">
 
             <label>Type de travaux</label>
@@ -36,10 +37,10 @@
       <div class = "top"></div>
   
      <script src="./assets/js/script.js"></script>
-    
+    </div>
    
     <script src="./assets/js/index.js"></script>
-    </div>
+    
     <div class="carte_visite">
               <img src="./assets/img/cv.jpg">
             </div>

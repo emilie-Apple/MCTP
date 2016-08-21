@@ -80,7 +80,7 @@
 <h1>Mentions légales  |  © 2016 Emilie Chartier & Thomas Merlin. All rights reserved.</h1>   
 </footer>
     
-    
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <script type="text/javascript" src="./assets/js/bootstrap/bootstrap.min.js"></script>
     <script src="./assets/js/realisations.js" type="text/javascript"></script>
     <script src="./assets/js/carousel.js" type="text/javascript"></script>
@@ -88,8 +88,17 @@
     <script src="./assets/js/prefixfree.min.js"></script>
     <script src='./assets/js/modal.js' type="text/javascript"></script> 
     
-    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-    
+    <!--
+    <script>
+            $('.xsResponsiveMenu-ContentLink').on('click', function() {
+                $('#trigger').click();
+            })
+    </script>
+
+    <script language="text/javascript">
+console.log('<br>Votre résolution est de '.screen.width+'x'+screen.height);
+</script>
+-->
 
   
 

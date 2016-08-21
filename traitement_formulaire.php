@@ -58,19 +58,19 @@ else
 	// formulaire envoyé, on récupère tous les champs.
 	$name    = (isset($_POST['name']))     ? Rec($_POST['name'])     : '';
 	$phone   = (isset($_POST['phone']))   ? Rec($_POST['phone'])   : '';
-	$mail   = (isset($_POST['mail']))   ? Rec($_POST['mail'])   : '';
+	$email   = (isset($_POST['email']))   ? Rec($_POST['email'])   : '';
 	$subject   = (isset($_POST['subject']))   ? Rec($_POST['subject'])   : '';
 	$message = (isset($_POST['message'])) ? Rec($_POST['message']) : '';
  
 	// On va vérifier les variables et l'email ...
-	$mail = (IsEmail($mail)) ? $mail : ''; // soit l'email est vide si erroné, soit il vaut l'email entré
+	$email = (IsEmail($mail)) ? $mail : ''; // soit l'email est vide si erroné, soit il vaut l'email entré
  
-	if (($name != '') && ($mail != '') && ($subject != '') && ($message != ''))
+	if (($name != '') && ($email != '') && ($subject != '') && ($message != ''))
 	{
 		// les 4 variables sont remplies, on génère puis envoie le mail
 		$headers  = 'MIME-Version: 1.0' . "\r\n";
-		$headers .= 'From:'.$name.' <'.$mail.'>' . "\r\n" .
-				'Reply-To:'.$mail. "\r\n" .
+		$headers .= 'From:'.$name.' <'.$email.'>' . "\r\n" .
+				'Reply-To:'.$email. "\r\n" .
 				'Content-Type: text/plain; charset="utf-8"; DelSp="Yes"; format=flowed '."\r\n" .
 				'Content-Disposition: inline'. "\r\n" .
 				'Content-Transfer-Encoding: 7bit'." \r\n" .
@@ -79,7 +79,7 @@ else
 		// envoyer une copie au visiteur ?
 		if ($copie == 'oui')
 		{
-			$cible = $destinataire.';'.$mail;
+			$cible = $destinataire.';'.$email;
 		}
 		else
 		{

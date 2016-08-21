@@ -43,10 +43,6 @@ html, body, .page {
 
 
 #p2 { background: silver; }
-#p3 { background: ; }
-#p4 { background: ; }
-#p5 { background: ; }
-
 
 #t2:target #p2,
 #t3:target #p3,
@@ -308,7 +304,6 @@ form input {
 
 form textarea{
   background-color: gray;
-  width: 100%;
   padding-right: 0;
 
 
@@ -329,6 +324,7 @@ width: 20%;
   background: silver;
   border-radius:0 0 40px 40px; 
 }
+
 #button_open_envelope{
   width: 220px;
   height: 50px;
@@ -344,6 +340,7 @@ width: 20%;
   transition:.3s;
   text-align: center;
 }
+
 #button_open_envelope:hover{
   background: #FFf;
   color: #2b67cb;
@@ -351,6 +348,7 @@ width: 20%;
   transition:background .25s, transform .5s,ease-in;
   cursor: pointer;
 }
+
 .message{
   position: relative;
   width: 580px;
@@ -363,18 +361,21 @@ width: 20%;
   transition-delay:1.5s;
   z-index: 300;
 }
+
 .left,.right,.top{width: 0; height: 0;position:absolute;top:0;z-index: 310;}
 .left{  
   border-left: 300px solid #337efc;
   border-top: 160px solid transparent;
   border-bottom: 160px solid transparent;
 }
+
 .right{ 
   border-right: 300px solid #337efc;
   border-top: 160px solid transparent;
   border-bottom: 160px solid transparent;;
   left:300px;
 }
+
 .top{ 
   border-right: 300px solid transparent;
   border-top: 200px solid #03A9F4;
@@ -384,6 +385,7 @@ width: 20%;
   transform:rotateX(0deg);
   z-index: 500;
 }
+
 .bottom{
   width: 600px;
   height: 190px;
@@ -459,13 +461,13 @@ select {
 ::-webkit-input-placeholder {color: white; ;font-size: 16px;}
 *:focus {outline: none;}
 input:focus:invalid,textarea:focus:invalid {
- /* when a field is considered invalid by the browser */
+ 
     background: gray;
     box-shadow: 0 0 5px #d45252;
     border:1px solid #b03535;
 }
 input:required:valid,textarea:required:valid { 
-  /* when a field is considered valid by the browser */
+  
     background: gray;
     box-shadow: 0 0 5px #5cd053;
     border-color: #28921f;
@@ -543,7 +545,6 @@ footer h1 {
   bottom: 0px;
 }
 
-
 .logo_artisan img{
 
  margin-top: 580px;
@@ -552,4 +553,7 @@ footer h1 {
  margin-left: 40px;
 
 }
+
+
+
 
