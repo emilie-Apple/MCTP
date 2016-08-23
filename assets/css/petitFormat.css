@@ -1,0 +1,9 @@
+@media screen and (max-width: 768px) {
+  .grand-format {
+    display: none;
+  }
+
+  .petitformat {
+  	display: inline;
+  }
+}
