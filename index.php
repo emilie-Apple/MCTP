@@ -43,7 +43,10 @@
                   </a>
                 </ul>
                 <div class="page" id="p1">
-                    <section class="accueil"></section> 
+                    <section class="accueil"></section>
+                    <div class="logo_artisan">
+                      <img src="./assets/img/artisan.jpg" />
+                    </div>  
                     <div id="box1" class="box blurred-bg tinted">
                       <div class="content">
                         <h3><i class="fa fa-phone" aria-hidden="true">  06.34.18.31.90</i></h3>
