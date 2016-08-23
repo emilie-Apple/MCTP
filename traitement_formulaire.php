@@ -25,7 +25,7 @@ $message_formulaire_invalide = "Vérifiez que tous les champs soient bien rempli
 */
  
 // on teste si le formulaire a été soumis
-if (!isset($_POST['envoi']))
+if (!isset($_POST['submit']))
 {
 	// formulaire non envoyé
 	echo '<p>'.$message_erreur_formulaire.'</p>'."\n";
@@ -59,7 +59,7 @@ else
 	$name    = (isset($_POST['name']))     ? Rec($_POST['name'])     : '';
 	$phone   = (isset($_POST['phone']))   ? Rec($_POST['phone'])   : '';
 	$email   = (isset($_POST['email']))   ? Rec($_POST['email'])   : '';
-	$subject   = (isset($_POST['sujet']))   ? Rec($_POST['sujet'])   : '';
+	$subject   = (isset($_POST['subject']))   ? Rec($_POST['subject'])   : '';
 	$message = (isset($_POST['message'])) ? Rec($_POST['message']) : '';
  
 	// On va vérifier les variables et l'email ...
@@ -119,5 +119,5 @@ else
 		// une des 3 variables (ou plus) est vide ...
 		echo '<p>'.$message_formulaire_invalide.' <a href="page5.php">Retour au formulaire</a></p>'."\n";
 	};
-	 
+}; 
 ?>
