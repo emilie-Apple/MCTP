@@ -3,20 +3,18 @@
 <html >
   <head>
     <meta charset="UTF-8">
-    <title>M-C-T-P</title>
+    <title>M.C.T.P</title>
     <meta name="viewport" content="initial-scale=1.0, user-scalable=yes" />
     <meta name="description" content="MCTP site de maçonnerie">
-    <meta name="keywords" content="maçonnerie, matériaux, maçon, béton, terrassement, carrelage, travaux publics, terrasse, MCTP, m-c-t-p">
+    <meta name="keywords" content="maçonnerie, matériaux, maçon, béton, terrassement, carrelage, travaux publics, terrasse, MCTP">
     <meta property="og:image" content="https://pbs.twimg.com/media/CCNJN_XUMAAJSzU.jpg:large">
     <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css' />
     <link rel="stylesheet" type="text/css" href="./assets/css/accordeonP3.css" />
     <link rel="stylesheet" type="text/css" href="./assets/css/realisations.css" />
     <link rel="stylesheet" type="text/css" href="./assets/css/page4/carousel.css" />
     <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
-    
-    
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   </head>
 
   <body> 
@@ -36,18 +34,13 @@
             </ul>
           <div class="page" id="p1">
              <section class="accueil"></section> 
-             <div class="logo_artisan">
-              <img src="./assets/img/artisan.jpg">
-            </div> 
           <div id="box1" class="box blurred-bg tinted">
   <div class="content">
       <h3><i class="fa fa-phone" aria-hidden="true">  06.34.18.31.90</i></h3>
       
   </div>
-  
 </div>
           </div>
-
           <div class="page" id="p2">
           <section class="icon fa fa-users"><span class="title">Qui sommes-nous ?</span>
           <div id="circle-shape-example">
@@ -84,24 +77,33 @@
     <script type="text/javascript" src="./assets/js/bootstrap/bootstrap.min.js"></script>
     <script src="./assets/js/realisations.js" type="text/javascript"></script>
     <script src="./assets/js/carousel.js" type="text/javascript"></script>
-     
+    <script src='http://cdn.ractivejs.org/latest/ractive.js'></script>
+    <script src="./assets/js/index.js"></script>  
     <script src="./assets/js/prefixfree.min.js"></script>
     <script src='./assets/js/modal.js' type="text/javascript"></script> 
     
-    <!--
+
     <script>
             $('.xsResponsiveMenu-ContentLink').on('click', function() {
                 $('#trigger').click();
             })
     </script>
 
-    <script language="text/javascript">
-console.log('<br>Votre résolution est de '.screen.width+'x'+screen.height);
-</script>
--->
+     <script type="text/javascript">
+        if (document.body) {
+            var largeurFenetre = (document.body.clientWidth);
+            var hauteurFenetre = (document.body.clientHeight);
+        }
+        else {
+            var largeurFenetre = (window.innerWidth);
+            var hauteurFenetre = (window.innerHeight);
+        }
 
-  
+        console.log(largeurFenetre);
+        console.log(hauteurFenetre);
 
-        </body>
-    </html>
+    </script> 
+
+    </body>
+</html>
 
