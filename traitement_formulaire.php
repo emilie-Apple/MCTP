@@ -15,7 +15,7 @@ $message_envoye = "Votre message a bien été envoyé!";
 $message_non_envoye = "L'envoi du mail a échoué, veuillez réessayer SVP.";
  
 // Messages d'erreur du formulaire
-$message_erreur_formulaire = "Vous devez d'abord <a href=\"page5.php\">envoyer le formulaire</a>.";
+$message_erreur_formulaire = "Vous devez d'abord <a href=\"index.php#t5\">envoyer le formulaire</a>.";
 $message_formulaire_invalide = "Vérifiez que tous les champs soient bien remplis et que l'email soit sans erreur.";
  
 /*
@@ -28,7 +28,7 @@ $message_formulaire_invalide = "Vérifiez que tous les champs soient bien rempli
 if (!isset($_POST['envoi']))
 {
 	// formulaire non envoyé
-	echo '<p>'.$message_erreur_formulaire.'</p>'."\n";
+	echo '<p>'.$message_envoye.'</p>'."\n";
 }
 else
 {
@@ -101,7 +101,7 @@ else
 		$tmp = explode(';', $cible);
 		foreach($tmp as $email_destinataire)
 		{
-			if (mail($email_destinataire, $objet, $message, $headers))
+			if (mail($email_destinataire, $subject, $message, $headers))
 				$num_emails++;
 		}
  
