@@ -119,31 +119,5 @@ else
 		// une des 3 variables (ou plus) est vide ...
 		echo '<p>'.$message_formulaire_invalide.' <a href="page5.php">Retour au formulaire</a></p>'."\n";
 	};
-	if (!isset($_POST['envoi'])))
-{
-	// afficher le formulaire
-	echo '
-	<form method="post" action="traitement_formulaire.php">
-          
-            <input type="text" name="name" id="name" placeholder="Nom*" required>
-    
-            <input type="text" name="phone" id="phone" placeholder=" Tél (optionel)" > 
-            <input type="email" name="email" id="email" placeholder=" Email* " required pattern="^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$">
-
-            <label>Type de travaux</label>
-            <select name="sujet" id="subject">
-            <option value="Maconnerie">Maconnerie</option>
-            <option value="Terrassement">Terrassement</option>
-            <option value="Agrandissement">Agrandissement</option>
-            <option value="Carrelage">Carrelage</option>
-            <option value="Plomberie">Plomberie</option>
-            <option value="Autres">Autres</option>
-                    
-               
-          <textarea name="message" id="messarea" placeholder=" Votre Message* " required></textarea>
-                
-            <input type="submit" name="envoi" value="Envoyer" id="send">
-        </form>'
-
-}; 
+	 
 ?>
