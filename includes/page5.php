@@ -9,9 +9,9 @@
       <div class = "message">
         <form method="post" action="traitement_formulaire.php">
           
-            <input type="text" name="nom" id="name" placeholder="Nom*" required>
+            <input type="text" name="name" id="name" placeholder="Nom*" required>
     
-            <input type="phone" name="phone" id="phone" placeholder=" Tél (optionel)" > 
+            <input type="text" name="phone" id="phone" placeholder=" Tél (optionel)" > 
             <input type="email" name="email" id="email" placeholder=" Email* " required pattern="^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$">
 
             <label>Type de travaux</label>

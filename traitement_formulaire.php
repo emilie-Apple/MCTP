@@ -28,7 +28,7 @@ $message_formulaire_invalide = "Vérifiez que tous les champs soient bien rempli
 if (!isset($_POST['envoi']))
 {
 	// formulaire non envoyé
-	echo '<p>'.$message_envoye.'</p>'."\n";
+	echo '<p>'.$message_erreur_formulaire.'</p>'."\n";
 }
 else
 {
@@ -63,7 +63,7 @@ else
 	$message = (isset($_POST['message'])) ? Rec($_POST['message']) : '';
  
 	// On va vérifier les variables et l'email ...
-	$email = (IsEmail($mail)) ? $mail : ''; // soit l'email est vide si erroné, soit il vaut l'email entré
+	$email = (IsEmail($email)) ? $email : ''; // soit l'email est vide si erroné, soit il vaut l'email entré
  
 	if (($name != '') && ($email != '') && ($subject != '') && ($message != ''))
 	{
@@ -107,7 +107,7 @@ else
  
 		if ((($copie == 'oui') && ($num_emails == 2)) || (($copie == 'non') && ($num_emails == 1)))
 		{
-			echo '<p>'.$message_envoye.'</p>';
+			echo '<p>'.$message_envoye.' <a href="index.php">Retour au site</a></p>';
 		}
 		else
 		{
