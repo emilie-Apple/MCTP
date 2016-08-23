@@ -15,7 +15,7 @@ $message_envoye = "Votre message a bien été envoyé!";
 $message_non_envoye = "L'envoi du mail a échoué, veuillez réessayer SVP.";
  
 // Messages d'erreur du formulaire
-$message_erreur_formulaire = "Vous devez d'abord <a href=\"index.php#t5\">envoyer le formulaire</a>.";
+$message_erreur_formulaire = "Vous devez d'abord <a href=\"page5.php\">envoyer le formulaire</a>.";
 $message_formulaire_invalide = "Vérifiez que tous les champs soient bien remplis et que l'email soit sans erreur.";
  
 /*
@@ -63,7 +63,7 @@ else
 	$message = (isset($_POST['message'])) ? Rec($_POST['message']) : '';
  
 	// On va vérifier les variables et l'email ...
-	$email = (IsEmail($email)) ? $email : ''; // soit l'email est vide si erroné, soit il vaut l'email entré
+	$email = (IsEmail($mail)) ? $mail : ''; // soit l'email est vide si erroné, soit il vaut l'email entré
  
 	if (($name != '') && ($email != '') && ($subject != '') && ($message != ''))
 	{
@@ -101,13 +101,13 @@ else
 		$tmp = explode(';', $cible);
 		foreach($tmp as $email_destinataire)
 		{
-			if (mail($email_destinataire, $subject, $message, $headers))
+			if (mail($email_destinataire, $objet, $message, $headers))
 				$num_emails++;
 		}
  
 		if ((($copie == 'oui') && ($num_emails == 2)) || (($copie == 'non') && ($num_emails == 1)))
 		{
-			echo '<p>'.$message_envoye.' <a href="index.php">Retour au site</a></p>';
+			echo '<p>'.$message_envoye.'</p>';
 		}
 		else
 		{
@@ -117,10 +117,9 @@ else
 	else
 	{
 		// une des 3 variables (ou plus) est vide ...
-		echo '<p>'.$message_formulaire_invalide.' <a href="index.php#t5">Retour au formulaire</a></p>'."\n";
+		echo '<p>'.$message_formulaire_invalide.' <a href="page5.php">Retour au formulaire</a></p>'."\n";
 	};
-}; 
-if (($err_formulaire) || (!isset($_POST['envoi'])))
+	if (!isset($_POST['envoi'])))
 {
 	// afficher le formulaire
 	echo '
@@ -145,5 +144,6 @@ if (($err_formulaire) || (!isset($_POST['envoi'])))
                 
             <input type="submit" name="envoi" value="Envoyer" id="send">
         </form>'
-};
+
+}; 
 ?>
