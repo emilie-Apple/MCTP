@@ -16,7 +16,7 @@ $message_non_envoye = "L'envoi du mail a échoué, veuillez réessayer SVP.";
  
 // Messages d'erreur du formulaire
 $message_erreur_formulaire = "Vous devez d'abord <a href=\"index.php\">envoyer le formulaire</a>.";
-$message_formulaire_invalide = "Vérifiez que tous les champs soient bien remplis et que l'email soit sans erreur.";
+
  
 /*
 	********************************************************************************************
@@ -59,7 +59,7 @@ else
 	$name    = (isset($_POST['name']))     ? Rec($_POST['name'])     : '';
 	$phone   = (isset($_POST['phone']))   ? Rec($_POST['phone'])   : '';
 	$email   = (isset($_POST['email']))   ? Rec($_POST['email'])   : '';
-	$subject   = (isset($_POST['sujet']))   ? Rec($_POST['sujet'])   : '';
+	$subject   = (isset($_POST['subject']))   ? Rec($_POST['subject'])   : '';
 	$message = (isset($_POST['message'])) ? Rec($_POST['message']) : '';
  
 	// On va vérifier les variables et l'email ...
@@ -113,11 +113,5 @@ else
 		{
 			echo '<p>'.$message_non_envoye.'</p>';
 		};
-	}
-	else
-	{
-		// une des 3 variables (ou plus) est vide ...
-		echo '<p>'.$message_formulaire_invalide.' <a href="index.php">Retour au formulaire</a></p>'."\n";
-	};
-}; 
+
 ?>
