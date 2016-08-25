@@ -32,7 +32,7 @@
                     <li class="icon fa fa-home boutonMenu" id="uno"> Accueil</li>
                   </a>
                   <a href="#t2">
-                    <li class="icon fa fa-users boutonMenu QSN" id="dos"> Qui sommes-nous ?</li>
+                    <li class="icon fa fa-users boutonMenu" id="dos"> Qui sommes-nous ?</li>
                   </a>
                   <a href="#t3">
                     <li class="icon fa fa-building boutonMenu" id="tres"> Activité</li>

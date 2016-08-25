@@ -112,9 +112,10 @@
 
   /* Carousel */
 
-  .carousel {
-    height: 400px;
+  .carousel-example-generic {
+    height: 50%;
   }
+
 
   /* Bloc Contact */
 
