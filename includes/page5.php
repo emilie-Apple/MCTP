@@ -24,9 +24,9 @@
             <option value="Autres">Autres</option>
                     
                
-          <textarea name="Message" id="messarea" placeholder=" Votre Message* " required></textarea>
+          <textarea name="message" id="messarea" placeholder=" Votre Message* " required></textarea>
                 
-            <input type="submit" value="Envoyer" id="send" />
+            <input type="submit" name="envoi" value="Envoyer" id="send">
         </form>
 
       </div>
