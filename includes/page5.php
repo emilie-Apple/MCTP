@@ -11,7 +11,7 @@
           
             <input type="text" name="Nom" id="name" placeholder="Nom*" required />
     
-            <input type="text" name="Téléphone" id="phone" placeholder=" Tél (optionel)" /> 
+            <input type="text" name="Téléphone" id="phone" placeholder=" Tél (optionel)" />
             <input type="email" name="Email" id="email" placeholder=" Email* " />
 
             <label class="typeTravaux">Type de travaux</label>

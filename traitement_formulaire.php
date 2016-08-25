@@ -25,48 +25,25 @@ $message_formulaire_invalide = "Vérifiez que tous les champs soient bien rempli
 */
  
 // on teste si le formulaire a été soumis
-if (!isset($_POST['submit']))
+if (!isset($_POST))
 {
 	// formulaire non envoyé
 	echo '<p>'.$message_erreur_formulaire.'</p>'."\n";
 }
 else
 {
-	/*
-	 * cette fonction sert à nettoyer et enregistrer un texte
-	 */
-	function Rec($text)
-	{
-		$text = htmlspecialchars(trim($text), ENT_QUOTES);
-		if (get_magic_quotes_gpc())
-		{
-			$text = stripslashes($text);
-		}
- 
-		$text = nl2br($text);
-		return $text;
-	};
- 
-	/*
-	 * Cette fonction sert à vérifier la syntaxe d'un email
-	 */
-	{
-		$value = preg_match('/^[-+.w]{1,64}@[-.w]{1,64}.[-.w]{2,6}$/i', $email);
-		return (($value === 0) || ($value === false)) ? false : true;
-	}
  
 	// formulaire envoyé, on récupère tous les champs.
-	$name    = (isset($_POST['name']))     ? Rec($_POST['name'])     : '';
-	$phone   = (isset($_POST['phone']))   ? Rec($_POST['phone'])   : '';
-	$email   = (isset($_POST['email']))   ? Rec($_POST['email'])   : '';
-	$subject   = (isset($_POST['sujet']))   ? Rec($_POST['sujet'])   : '';
-	$message = (isset($_POST['message'])) ? Rec($_POST['message']) : '';
- 
-	// On va vérifier les variables et l'email ...
-	$email = (IsEmail($email)) ? $email : ''; // soit l'email est vide si erroné, soit il vaut l'email entré
- 
+	$name    =  $_POST['Nom'];
+	$phone   = $_POST['Téléphone'];
+	$email   = $_POST['Email'];
+	$subject   = $_POST['Sujet'];
+	$message = $_POST['message'];
+	
+	
 	if (($name != '') && ($email != '') && ($subject != '') && ($message != ''))
 	{
+
 		// les 4 variables sont remplies, on génère puis envoie le mail
 		$headers  = 'MIME-Version: 1.0' . "\r\n";
 		$headers .= 'From:'.$name.' <'.$email.'>' . "\r\n" .
@@ -75,7 +52,7 @@ else
 				'Content-Disposition: inline'. "\r\n" .
 				'Content-Transfer-Encoding: 7bit'." \r\n" .
 				'X-Mailer:PHP/'.phpversion();
-	
+		
 		// envoyer une copie au visiteur ?
 		if ($copie == 'oui')
 		{
