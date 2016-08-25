@@ -1,6 +1,6 @@
 $(document).ready(function(){
 	$('.frame').click(function(){
-		$('.top').addClass('open');
+		$('.haut').addClass('open');
 		$('.message').addClass('pull');
 	})
 });

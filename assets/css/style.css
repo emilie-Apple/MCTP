@@ -21,6 +21,10 @@ html, body, .page {
   position: absolute;
 }
 
+.petit-format {
+  display: none;
+}
+
 #t1 {
     z-index: 1;
 }
@@ -132,6 +136,10 @@ ul .icon:hover {
   height: 32px;
   padding: 5px;
 
+}
+
+.QSN {
+  height: 50px;
 }
 
 a {
@@ -255,9 +263,9 @@ a {
   margin: auto;
 }
 
-h3{
-  color: white;
-  
+.telephone {
+  text-decoration: none;
+  border-bottom: none;
 }
 .tinted h3, .tinted p {
   color: white;
@@ -285,7 +293,6 @@ h4 {
   border-bottom: 1px solid white;
   text-align: left;
   color: white;
-
 }
 
 p {
@@ -313,8 +320,7 @@ form textarea{
   
 margin-top: -500px;
 width: 20%;
-
-
+vertical-align: inherit;
 }
 .frame{
   width: 600px;
@@ -362,21 +368,21 @@ width: 20%;
   z-index: 300;
 }
 
-.left,.right,.top{width: 0; height: 0;position:absolute;top:0;z-index: 310;}
-.left{  
+.gauche,.droit,.haut{width: 0; height: 0;position:absolute;top:0;z-index: 310;}
+.gauche{  
   border-left: 300px solid #337efc;
   border-top: 160px solid transparent;
   border-bottom: 160px solid transparent;
 }
 
-.right{ 
+.droit{ 
   border-right: 300px solid #337efc;
   border-top: 160px solid transparent;
   border-bottom: 160px solid transparent;;
   left:300px;
 }
 
-.top{ 
+.haut{ 
   border-right: 300px solid transparent;
   border-top: 200px solid #03A9F4;
   border-left: 300px solid transparent;
@@ -386,7 +392,7 @@ width: 20%;
   z-index: 500;
 }
 
-.bottom{
+.bas{
   width: 600px;
   height: 190px;
   position: absolute;
@@ -434,8 +440,9 @@ width: 20%;
   padding: 10px;
 }
 
-label {
+.typeTravaux {
   padding-left: 150px;
+  text-align: center;
 
 }
 
