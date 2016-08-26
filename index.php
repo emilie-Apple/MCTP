@@ -32,7 +32,7 @@
                     <li class="icon fa fa-home boutonMenu" id="uno"> Accueil</li>
                   </a>
                   <a href="#t2">
-                    <li class="icon fa fa-users boutonMenu" id="dos"> Qui sommes-nous ?</li>
+                    <li class="icon fa fa-users boutonMenu QSN" id="dos"> Qui sommes-nous ?</li>
                   </a>
                   <a href="#t3">
                     <li class="icon fa fa-building boutonMenu" id="tres"> Activité</li>
@@ -60,7 +60,7 @@
                     <div id="circle-shape-example">
                       <img src="assets/img/logo.png" alt="logo" class="logo" />
                       <h4>Présentation</h4>
-                        <p>L'entreprise <strong>M-C-T-P </strong> situé dans la région du Loiret à <a data-toggle="tooltip" href="http://www.pagesjaunes.fr/pros/detail?bloc_id=0634183190558587290001C0001&no_sequence=0&code_rubrique=30450600#plan" title="Localisation">Nangeville (45330)</a> <br/>
+                        <p>L'entreprise <strong>M-C-T-P </strong> situé dans la région du Loiret à <a data-toggle="tooltip" href="http://www.pagesjaunes.fr/pros/detail?bloc_id=0634183190558587290001C0001&no_sequence=0&code_rubrique=30450600#plan" title="Localisation" target="_blank">Nangeville (45330)</a> <br/>
                         est une entreprise de maçonnerie générale créée en 2013 par Fabien TECHER.</p>
                         <p>Avec l’aide de son associé Grégory et d’une équipe de 6 personnes, l’entreprise <br/>
                         <strong>M-C-T-P </strong>met toutes ses compétences et son savoir faire à votre service .<br/>
@@ -124,16 +124,16 @@
           <strong><span class="titreBloc">Nos réalisations</span></strong>
         </div>
         <br />
-        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+        <div id="carousel-example-generic-8" class="carousel slide" data-ride="carousel">
           <!-- Indicators -->
           <ol class="carousel-indicators">
-            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-            <li data-target="#carousel-example-generic" data-slide-to="3"></li>
-            <li data-target="#carousel-example-generic" data-slide-to="4"></li>
-            <li data-target="#carousel-example-generic" data-slide-to="5"></li>
-            <li data-target="#carousel-example-generic" data-slide-to="6"></li>
+            <li data-target="#carousel-example-generic-8" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-example-generic-8" data-slide-to="1"></li>
+            <li data-target="#carousel-example-generic-8" data-slide-to="2"></li>
+            <li data-target="#carousel-example-generic-8" data-slide-to="3"></li>
+            <li data-target="#carousel-example-generic-8" data-slide-to="4"></li>
+            <li data-target="#carousel-example-generic-8" data-slide-to="5"></li>
+            <li data-target="#carousel-example-generic-8" data-slide-to="6"></li>
           </ol>
 
           <!-- Wrapper for slides -->
@@ -162,11 +162,11 @@
           </div>
 
           <!-- Controls -->
-          <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+          <a class="left carousel-control" href="#carousel-example-generic-8" role="button" data-slide="prev">
             <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
             <span class="sr-only">Previous</span>
           </a>
-          <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+          <a class="right carousel-control" href="#carousel-example-generic-8" role="button" data-slide="next">
             <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
             <span class="sr-only">Next</span>
           </a>
