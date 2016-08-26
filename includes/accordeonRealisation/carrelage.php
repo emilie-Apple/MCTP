@@ -25,7 +25,7 @@
               <img src="./assets/img/carrelage3.jpg" alt="Réalisation Maçonnerie n°1">
             </div>
             <div class="item">
-              <img src="./assets/img/sdb10.jpg" alt="Réalisation Maçonnerie n°2">
+              <img src="./assets/img/sdb1.jpg" alt="Réalisation Maçonnerie n°2">
             </div>
             <div class="item">
               <img src="./assets/img/sdb13.jpg" alt="Réalisation Terrassement n°1">
