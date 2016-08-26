@@ -134,16 +134,17 @@ h2 {
 	font-size:42px;
 	color:#fff;
 }
-button{
+
+button {
     background: none !important;
     border: none;
     color: #FFFFFF;
     padding: 0 !important;
     text-decoration: none;
     cursor: pointer;
-	height:40px;
+    height:40px;
     font-weight: 100;
-    font-size: 2rem;
+    font-size: 28px;
     line-height: 1;
     text-shadow: 0 0 10px rgba(0,0,0,0.5);
 }
@@ -203,11 +204,11 @@ button:focus{outline:none;}
     display: inline-block;
 }
 
-.modal-content {
+.modal_content {
     padding: 20px 40px;
 }
 
-.modal-content p {
+.modal_content p {
     padding: 20px;
     margin-left: 0px;
     text-align: justify;

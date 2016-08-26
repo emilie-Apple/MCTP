@@ -12,7 +12,7 @@
     <div class="modal-strip">
         <img src="./assets/img/carrelage3.jpg">
     </div>
-    <div class='modal-content'>
+    <div class='modal_content'>
         <p>Carrelage, Faïence ? Intérieur, extérieur ? Neuf ou rénovation ? Notre entreprise saura répondre à votre demande.<br />
         Nous pratiquons également plusieurs poses de carrelages, en passant de la pose droite à la pose en modules, afin de pouvoir vous proposer un travail de qualité.<br />
         De plus, toutes les pièces peuvent être carrelées, en fonction de votre demande.</p>
